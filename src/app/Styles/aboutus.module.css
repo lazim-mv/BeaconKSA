@@ -1,0 +1,563 @@
+
+
+.aboutUsMainContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 118px;
+}
+
+.aboutUsMainContainer h2 {
+    margin-top: 96px;
+}
+
+.aboutUsMainContainer .mBusinessDesc1{
+    display: none;
+}
+
+.aboutUsHeroContainer :nth-child(1){
+    margin-top: 5px;
+}
+
+.aboutUsHeroContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 0 135px;
+    margin-top: -65px;
+}
+
+.aboutUsHeroContainer p{
+    width: 95%;
+    color: #58595B;
+    text-align: center;
+    /* font-size: 14px; */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.greenBannerContiner{
+    background: #13670B;
+    width: 100%;
+    height: 194px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 135px;
+}
+
+.greenBannerContiner h1{
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 67.2px */
+    text-transform: capitalize;
+}
+
+.greenBannerContiner p{
+    color: #fff;
+}
+
+.aboutUsContainer2{
+    padding: 0 135px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-top: -10px;
+}
+
+.aboutUsContainer2 h2{
+    margin: 0;
+}
+
+.cardMainContainer{ 
+    display: flex;
+    margin-top: 48px;
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #F7F7F8;
+    padding: 0 60px 40px 60px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.cardContainer .ImageCon{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    left: 54px;
+    top: -40px;
+    width: 66%;
+    /* width: 100%;
+    gap: 24%;
+    left: 50px; */
+}
+
+.mCardIcon{
+    display: none;
+}
+
+.ImageCon div{
+    width: 75px;
+    height: 75px;
+}
+
+.cardContent{
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+}
+
+.cardContent div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cardContainer h1{
+    text-align: left;
+    margin-bottom: 15px;
+    color: #02040E;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 28.8px */
+    text-transform: capitalize;
+}
+
+.cardContainer p{
+    text-align: left;
+    width: 95%;
+    color: #58595B;
+    /* font-size: 14px; */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.aboutUscontainer3{
+    padding: 80px 135px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 70px; */
+    background-color: #F7F7F8;
+}
+
+.vissionMissionContainer{
+    display: flex;
+    gap: 30px;
+}
+
+.vissionMissionCell{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.vissionMissionContainer div:nth-child(2) .container3Content{
+    order: 1;
+    height: 400px;
+}
+
+.vissionMissionContainer div:nth-child(2) .container3Img {
+   height: 245px ;
+}
+
+.container3Content{
+    display: flex;
+    flex-direction: column;
+    height: 325px;
+    padding-top: 40px;
+    gap: 15px;
+
+}
+
+.container3Content h1{
+    color: #02040E;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 36px */
+    text-transform: capitalize;
+}
+
+.container3Content p{
+    color: #58595B;
+
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+.container3Img{
+    height: 325px;
+}
+
+
+/* .container3Content .c1 {
+    order: -1;
+}
+.container3Content .c2 {
+    order: 1;
+}
+.container3Content .c3 {
+    order: -1;
+} */
+/* 
+.c1 .container3Img{
+    order: 1;
+}
+.c2 .container3Img{
+    order: -1;
+}
+.c3 .container3Img{
+    order: 1;
+} */
+
+.contentContainer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contentContainer h1{
+    color: #02040E;
+    text-align: left;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 56px */
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.contentContainer p{
+    text-align: left;
+    color: #58595B;
+    /* font-size: 14px; */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+
+.aboutUscontainer4{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 0 135px;
+}
+
+.aboutUscontainer4 h2{
+    margin-top: 0;
+}
+
+/* .coreValueCard{
+    display: flex;
+    gap: 30px;
+}
+
+.coreValueCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(247, 247, 248, 1);
+    padding: 40px 30px;
+}
+
+.cvImgContainer{
+    margin-bottom: 20px;
+} */
+
+
+.cvCard{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 70px;
+    margin-bottom: -45px;
+}
+
+.cvBackground{
+    width: 31%;
+    margin-bottom: 60px;
+}
+
+.cvImg{
+    position: absolute;
+    top: -50px;
+    left: 15px;
+    width: 80px;
+    height: 80px;
+}
+
+.cvContent{
+    position: relative;
+    background-color: #F7F7F8;
+    padding-top: 50px;
+    margin-bottom: -15px;
+}
+
+.cvText{
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    height: 220px;
+}
+
+
+.cvContent h1{
+    color: #02040E;
+    text-align: left;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 24px */
+    text-transform: capitalize;
+}
+
+.cvContent h1{
+    margin-bottom: 15px;
+}
+
+.cvContent p{
+    text-align: left;
+    color: #58595B;
+    /* font-size: 14px; */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.hidden{
+    display: none;
+}
+
+.vissionMissionImage .loader{
+    margin: auto;
+}
+
+@media (max-width: 600px) {
+
+    .aboutUsMainContainer p{
+        font-size: 12px;
+    }
+
+    .aboutUsMainContainer{
+        gap: 50px;
+    }
+
+    .aboutUsMainContainer .mBusinessDesc1{
+        display: flex;
+        color: #02040E;
+        margin-top: 125px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .aboutUsHeroContainer{
+        padding: 0 24px;
+        gap: 20px;
+    }
+
+    .greenBannerContiner{
+        padding: 30px 84px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: -10px;
+    }
+
+    .greenBannerContiner h1{
+        color: #FFF;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 33.6px */
+        text-transform: capitalize;
+    }
+
+    .statContainer{
+        
+    }
+
+    .aboutUsContainer2{
+        padding: 0 24px;
+        gap: 30px;
+    }
+
+    .aboutUsContainer2 .mBusinessDesc1{
+        margin: 0 auto;
+    }
+
+    .mobilePaddingCard{
+        padding-left: 54px;
+    }
+
+    .cardMainContainer{
+        display: block;
+        margin-top: 0;
+    }
+
+    .cardContainer{
+        padding: 30px 15px 30px 45px;
+    }
+
+    .cardIcon{
+        display: none;
+    }
+
+    .ImageCon{
+        flex-direction: column;
+        left: -38px !important;
+        height: 73%;
+        width: auto !important;
+        margin-top: 100px;
+    }
+
+    .ImageCon div{
+        width: 60px;
+        height: 60px;
+    }
+
+    .cardIcon{
+        display: none;
+    }
+
+    .mCardIcon{
+        display: flex;
+    }
+
+    .cardContent{
+        flex-direction: column;
+        margin: 0;
+        gap: 30px;
+    }
+    
+    .cardContent h1{
+        color: #02040E;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; /* 19.2px */
+        text-transform: capitalize;
+        margin-bottom: 5px;
+    } 
+
+    .cardContent p{
+        width: 100%;
+    }
+
+    .aboutUscontainer3{
+        padding: 40px 24px 0px 24px;
+        gap: 20px;
+    }
+
+    .vissionMissionContainer{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .vissionMissionCell{
+        width: auto;
+        gap: 30px;
+    }
+
+    .vissionMissionContainer div:nth-child(2) .container3Content{
+        order: -1;
+        height: auto;
+    }
+    
+    .vissionMissionContainer div:nth-child(2) .container3Img {
+        height: auto;
+    }
+
+    .vissionMissionContainer .vissionMissionCell:nth-child(3) {
+        margin-top: -40px;
+    }
+
+    .container3Content{
+        height: auto;
+        padding-top: 0;
+    }
+
+    .container3Content h1{
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .aboutUscontainer4{
+        padding: 0 24px;
+        gap: 0px;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .aboutUscontainer4 .mBusinessDesc1{
+        margin: 0;
+        text-align: center;
+    }
+
+    .cvBackground{
+        width: 44%;
+    }
+
+    .cvImg{
+        width: 60px;
+        height: 60px;
+        top: -30px;
+        left: 5px;
+    }
+
+    .cvContent{
+        padding-top: 40px;
+        border-radius: 10px;
+    }
+
+    .cvText{
+        height: 100%;
+        padding:10px 10px 20px 10px ;
+    }
+
+    .coreValueCard{
+        flex-wrap: wrap;
+    }
+
+    .coreValueCards{
+        padding: 20px 10px;
+        width: 45%;
+    }
+
+    .cvImgContainer {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 10px;
+    }
+
+    .cvContent h1{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .contactCont h2 {
+        margin-top: 0;
+    }
+}
