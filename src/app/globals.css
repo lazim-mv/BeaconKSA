@@ -321,7 +321,7 @@ li{
 }
 
 .heroDescContainer{
-  width: 45%;
+  width: 35%;
 }
 
 .textOverlay {
@@ -403,6 +403,7 @@ li{
   gap: 28px;
   width: 100%;
   margin-top: 10px;
+  align-self: center;
 }
 
 .locationHeading{
@@ -533,7 +534,7 @@ li{
 
 .scrollContainer{
   width: 100%;
-  height: 373px;
+  height: 415px;
 }
 
 .placesContainer .juriMainCardContainer{
@@ -565,7 +566,7 @@ li{
 
 .placesCardImage img{
   width: auto;
-  height: 373px !important;
+  height: 415px !important;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -578,8 +579,8 @@ li{
 }
 
 .placesCard .juriContent{
-  padding: 70px 30px;
-  height: 373px;
+  padding: 70px 15px;
+  height: 415px;
 }
 
 .circleNumber{
@@ -1433,7 +1434,7 @@ li{
 }
 
 .contactContainer {
-  background: url("../../public/NewSvgs/Backgrounds/uaeBg2.png");
+  background: url("../../public/NewSvgs/Backgrounds/contactKsa.svg");
   width: 100%;
   height: 450px;
   object-fit: cover;
@@ -1465,7 +1466,7 @@ li{
   text-align: center;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 140%; /* 28px */
 }
 
@@ -2653,7 +2654,7 @@ li{
   }
 
   .contactContainer{
-    background: url("../../public/NewSvgs/Backgrounds/uaeBg1.png");
+    background: url("../../public/NewSvgs/Backgrounds/contactKSA.png");
     width: 100%;
     height: 250px;
     padding: 31px 20px;
@@ -2679,7 +2680,7 @@ li{
     color: #FFF;
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 140%; /* 19.6px */
   }
 

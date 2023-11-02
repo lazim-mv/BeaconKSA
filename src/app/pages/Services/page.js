@@ -15,7 +15,7 @@ function Services() {
       img: "/NewSvgs/SVG2/hh/Group1.svg",
       heading: "Business Incorporation",
       description:
-        "Get company incorporation assistance and compliance support right after the registration process. Tell us your requirements and let us drive your investment and growth with business incorporation services",
+        "We offer business incorporation and compliance support to drive your business right. Let us know your business needs and scale your business setup process while saving on costs.",
       details: [
         "GCC National Company",
         "Limited Liability Company",
@@ -27,7 +27,7 @@ function Services() {
       img: "/NewSvgs/SVG2/hh/Group6.svg",
       heading: "Business Consultation",
       description:
-        "Let us discuss your business requirements, augment your business processes and transform your brand with innovation, leadership, and technology.",
+        "Our team provides business consultation services to serve your business needs and guide you through the crucial aspects of business like technology, people, processes, and operations.",
       details: [
         "Government Relation Management",
         "Employee Work Permit & Visa Assistance",
@@ -42,7 +42,7 @@ function Services() {
       img: "/NewSvgs/SVG2/hh/Group2.svg",
       heading: "Financial & Accounting",
       description:
-        "With regular monitoring of accounting, financial reporting and related business activities, we analyze the financial processes essential to your business.",
+        "With regular management of accounts, financial reports, and the related processes of the firm, we engage in analyzing and reporting the financial resources of your company.",
       details: [
         "Financial Statement Preparation",
         "Tax Planning & Preparation",
@@ -57,7 +57,7 @@ function Services() {
       img: "/NewSvgs/SVG2/hh/Group4.svg",
       heading: "Audit & Taxation",
       description:
-        "Through end-to-end monitoring and review of the crucial tax matters of the business, our panel of experts are adept at maintaining accuracy in reports.",
+        "Through regular monitoring and review of the core tax matters that affect the business, we generate audit and tax reports relevant to your business that keep the quality alive.",
       details: [
         "Internal Audits",
         "Compliance Audits",
@@ -72,7 +72,7 @@ function Services() {
       img: "/NewSvgs/SVG2/hh/Group3.svg",
       heading: "Technology Solutions",
       description:
-        "We combine technological expertise with business experience, thereby making prompt resolutions to address your technical needs that propel your business.s",
+        "Our technical experts let you experience the best of business with the power of technology and address your quest for innovation by reimagining the scope of business models.",
       details: [
         "Digital Strategy",
         "Designing",
@@ -85,7 +85,7 @@ function Services() {
       img: "/NewSvgs/SVG2/hh/Group5.svg",
       heading: "Digital Marketing",
       description:
-        "Let us take your brand to new heights with the best marketing activities and help you build a positive impression on the customers for better brand outreach.",
+        "Let us take care of all your digital marketing requirements and take your business processes along the growth path with the strategies and services to trigger brand outreach.",
       details: [
         "Search Engine Optimization (SEO)",
         "Search Engine Marketing (Google Ads)",
@@ -187,21 +187,19 @@ function Services() {
         <div className={styles.servicesPageContainer2}>
           <div className={styles.container2Contents}>
             <h1 className="businessDesc">
-              Your Business Milestone Is
-              <br /> Under Progress
+              Skyrocketing Your Business
+              <br /> Development in KSA
             </h1>
             <h1 className={`${styles.servicePagecontainer2MobileHeading}`}>
-              Your Business Milestone Is
-              <br /> Under Progress
+              Skyrocketing Your Business Development in KSA
             </h1>
             <p>
-              Starting or developing a business in the UAE involves many steps—
-              this includes visas, sponsorship, trade licenses, financial
-              activities and many must-haves that you require to fund and manage
-              your business. With comprehensive support and collaboration, we
-              handle every aspect of your business without a hitch. You can
-              trust us to manage every nook and corner of your business, no
-              matter how critical or mundane it would be.
+              Business development in the KSA involves various steps that
+              include sponsorship, visa assistance, trade license, financial
+              support and many other essential aspects necessary for fund and
+              business management. Through in-depth support and collaboration,
+              we guide your business and manage every step of it without making
+              it a mundane task.
             </p>
           </div>
           <div className={styles.servicePageImageContainer2}>
@@ -246,7 +244,7 @@ function Services() {
               </div>
             )}
             <Image
-              src="/NewSvgs/Backgrounds/bguae5.svg"
+              src="/NewSvgs/Backgrounds/bguae10.svg"
               width={500}
               height={500}
               layout="responsive"
@@ -260,24 +258,23 @@ function Services() {
           </div>
           <div className={styles.container4Contents}>
             <h1 className="businessDesc">
-              Cracking the Puzzle with the
-              <br /> Right Business Strategies
+              Strategising Business
+              <br /> to Fit Your Goals
             </h1>
             <h1 className={`${styles.servicePagecontainer2MobileHeading}`}>
-              Cracking the Puzzle with
-              <br /> the Right Business Strategies
+              Strategising Business to Fit
+              <br /> Your Goals
             </h1>
             <p className="servicesDesc">
-              With expertise in serving the businesses over years, we have been
-              making efficient and compliant business strategies for
-              entrepreneurs all over the UAE. Being the foremost business
-              management consultant and the pioneered business setup provider
-              across the UAE, our company specialises in offering bespoke
-              solutions in business incorporation, Immigration Support,
-              Corporate Banking, technological solutions, Corporate Finance and
-              accounting, Tax Compliance, audit and digital marketing services.
-              Let&lsquo;s get in touch today to make a customised proposal for
-              your business that stays close to your business goals!
+              Beacon has amazing experience in serving businesses over the
+              years, making it compliant and efficient with the top business
+              strategies for all business owners in the KSA. As a leading
+              business management consultant and the best business set-up
+              provider in KSA, we offer a wide range of business, incorporation,
+              banking, technology, digital marketing, immigration, accounting,
+              tax, and auditing services. Let&lsquo;s talk today and get a tailor-made
+              proposal that speaks the essence of your business to leap forward
+              and fulfil your business goals!
             </p>
           </div>
         </div>

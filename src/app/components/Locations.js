@@ -21,34 +21,29 @@ function Locations() {
         <div className="locationContentContainer">
           <div>
             <h2 className="locationHeading">
-              Committed to Enhance
-              <br /> Your Business Efficiency
+              Set Your Business with the
+              <br /> Best Investment Potential
             </h2>
             <h2 className="locationHeading mlocationHeading">
-              Committed to Enhance
-               Your <br /> Business Efficiency
+              Set Your Business with the
+              <br /> Best Investment Potential
             </h2>
           </div>
           <div>
             <p className="locationDesc">
-              Beacon has laid its standards to streamline the business setup
-              services in UAE, KSA, and India, with a plethora of specialised
-              solutions to understand the legal procedures, documentation,
-              financial authenticity, brand promotion, technological
-              improvements, and other vital aspects toward establishing
-              businesses in iconic landmarks. Equipped by a skilled team to
-              simplify the process and adopt compliance with the UAE laws, we
-              encourage and walk along to make your desire to start a business
-              or expand your business in Dubai, UAE, a dream come true. UAE is
-              well known for its world-class infrastructure, connectivity,
-              workforce, technological abundance, innovation, business growth,
-              and cosmopolitan culture. Earmarked as the leading business
-              consultants in Saudi Arabia and global landmarks, we have also
-              extended our roots to Dubai, UAE to help you future-proof your
-              entrepreneurial journey with business-friendly policies at
-              strategic locations. Get our assistance for 100% foreign
-              ownership, amazing connectivity to leading markets, and
-              cost-effective business setup in UAE.
+              Saudi Arabia is one of the most competitive and dominant countries
+              in the Middle East which has great investment potential. With an
+              extensive scope for innovation, we provide services that encourage
+              running a successful business with specialized guidance on
+              administrative, legal, technological, and marketing aspects. We
+              give you the right business incorporation assistance with
+              necessary guidance through the entire process while making sure it
+              adheres to all the required steps efficiently. This encourages you
+              to exercise ease of doing business, enjoy 100% business ownership,
+              leverage financial and regulatory incentives, and experience
+              streamlined processes. Being your trusted incorporation experts,
+              we take true responsibility for your business setup and establish
+              your company in Saudi Arabia.
             </p>
           </div>
           <a href="/pages/Services">

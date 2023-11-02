@@ -9,24 +9,24 @@ function Places() {
   const pageData = [
     {
       img: "/Jurisdiction/Jeddah.svg",
-      heading: "Abu Dhabi",
+      heading: "JEDDAH",
       Number: "01",
       description:
-        "Explore the unparalleled ease of running your business in Abu Dhabi, the largest emirate in UAE, and make your business thrive amongst the best dynamic economy.",
+        "Make the most out of the plethora of opportunities that lie in the hands of Jeddah, Saudi Arabia backed by factors like low debt, macroeconomic stability, and high budget surplus. With the worldwide attention for offering an advanced institutional framework, Jeddah is an ideal place to run your business. We travel the extra mile to redefine your business with innovative solutions to cater to your business needs.",
     },
     {
       img: "/Jurisdiction/Damam.svg",
-      heading: "Dubai",
+      heading: "DAMMAM",
       Number: "02",
       description:
-        "Establish your business in Dubai, the tax-favorable, business-friendly and highly desirable economically diverse destination that has ranked first in ease of doing business.",
+        "Discover the significant revenue opportunities, expand your business, improve credibility, and open the doors of business potential through the amazing incorporation possibilities that Dammam has for investors. Take advantage of the surge in demand for unique business ventures in the booming economy and participate in the evolving market to stay ahead of the curve in the region.",
     },
     {
       img: "/Jurisdiction/Riyadh.svg",
-      heading: "Sharjah",
+      heading: "RIYADH",
       Number: "03",
       description:
-        "Get immense advantage of seamless business setup in Sharjah, and experience the privilege of setting up business irrespective of mainland, offshore, or freezone preferences.",
+        "Get immense opportunities to benefit from the economic growth of Saudi Arabia through the diversification strategies that light up the opportunities for foreign and native businesses. Tap into the power of incorporating your company by extending the processes and establishing your business across the iconic location of Riyadh, Saudi Arabia, and leverage the growing consumer base of the country.",
     },
   ];
 

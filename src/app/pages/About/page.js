@@ -12,39 +12,39 @@ function About() {
   const cvData = [
     {
       img: "/NewSvgs/SVG7/Group1.svg",
-      heading: "Agile team",
+      heading: "Business Agility",
       description:
-        "Fueled by a team of farsighted consultants, PRO specialists, operations staff, and an expert workforce, we offer custom business incorporation strategies to serve clients while streamlining the financial aspects.",
+      "Our team of proactive consultants, PRO experts, business operations staff, and professionals offer business incorporation strategies tailor-made to streamline your business aspects.",
     },
     {
       img: "/NewSvgs/SVG7/Group2.svg",
-      heading: "Proficiency",
+      heading: "Expertise & Proficiency",
       description:
-        "With expertise and credibility, we confidently take up your business setup ideas, discuss your concerns, gather the requirements and address these well to sustain your position in the UAE market.",
+      "Through professional experience and goodwill, we gather your business setup expectations and work based on the needs to address the concerns helping you thrive in the KSA Market.",
     },
     {
       img: "/NewSvgs/SVG7/Group3.svg",
-      heading: "Client Satisfaction",
+      heading: "Client Fulfilment",
       description:
-        "We take pride in dedicatedly providing bespoke solutions to serve the clients’ needs. Our clients range from entrepreneurs of various sectors and industries, and we look forward to supporting you to trigger client satisfaction.",
+      "With bespoke solutions that align with your goals, you get served based on your needs and according to the industry through the solutions to assist you and boost your satisfaction.",
     },
     {
       img: "/NewSvgs/SVG7/Group4.svg",
-      heading: "End-to-end Consulting",
+      heading: "Top-notch Consulting",
       description:
-        "We understand the business jurisdictions UAE is segmented to, and comprehend the laws and regulations within each. With compliance, we offer risk mitigation strategies and valuable advice to entrepreneurs.",
+      "We comprehend the business jurisdictions, rules and regulations, thereby providing the risk mitigation services along with the consulting solutions to the entrepreneurs.",
     },
     {
       img: "/NewSvgs/SVG7/Group5.svg",
-      heading: "Cost-Effective Evaluation",
+      heading: "Affordable Evaluation",
       description:
-        "If not directed properly, the cost of business setup in UAE could be massive. We closely evaluate the documentation, legal, business and operational aspects to help you with cost-effective business setup.",
+      "The cost of company setup in KSA would be huge if not directed appropriately. We evaluate the documentation, and the aspects of business and operations to adopt a cost-efficient business setup.",
     },
     {
       img: "/NewSvgs/SVG7/Group6.svg",
-      heading: "Smooth Registration Support",
+      heading: "Easy to Register",
       description:
-        "Being the leading business setup consultants, we keep your entire company formation process easy and effortless. Through our in-depth experience, we consider all necessary elements to simplify the business setup in UAE.",
+      "As the top business setup consultants in KSA, we help you make the process of company formation effortless. With in-depth expertise, we simplify the company setup making it easy to register.",
     },
   ];
 
@@ -54,21 +54,21 @@ function About() {
       heading: "Our Mission",
       className: "c1",
       description:
-        "To empower the founders and entrepreneurs with the best appropriate fiscal consultation and business setup services to thrive in the fast-developing business ecosystem. We strive to work with clients to let them make remarkable achievements in business with a key focus on offering holistic digital, financial, legal, operational and technological assistance.",
+      "To strengthen the efforts of entrepreneurs and business founders with the ideal business consultation and incorporation strategies helping them fix their roots in the ever-evolving business ecosystem. We help clients attain remarkable business achievements while emphasising assistance in all segments of business operations.",
     },
     {
       img: "/NewSvgs/SVG7/v2.svg",
       heading: "Our Values",
       className: "c2",
       description:
-        "Our efforts are infused with the core values of innovation, productivity, transparency, dedication and trust, and we feel confident to build relationships and keep delivering solutions to the businesses based on the client's expectations. We make your dream of business incorporation in UAE a success with our support at every step of your journey while holding to our values which helps us achieve an exceptional position in the market.",
+      "We grow with the values encompassing productivity, innovation, transparency and dedication to stay confident while developing relationships. Our panel keeps delivering business solutions woven to suit your expectations while transforming your business incorporation dream into a success with support at every phase of your journey for an amazing position in the market.",
     },
     {
       img: "/NewSvgs/SVG7/v3.svg",
       heading: "Our Vision",
       className: "c3",
       description:
-        "To design and establish your business realm through an unparalleled assistance plan, triggering your efforts to strengthen your organisation’s processes, regulations and technologies that add necessary substance for your business, laying a benchmark of excellence. We keep an emphasis on evolving into the global market leader with an all-in-one business setup formula.",
+      "To build and expand the business realm through exceptional planning, and scaling the efforts to push business towards excellence with the best of technologies. We strive to lay the benchmark of business consulting solutions and strategies while working towards achieving the goal of being a global marketing leader with the encapsulation of all business requirements.",
     },
   ];
   const [loaded, setLoaded] = useState(false);
@@ -85,15 +85,13 @@ function About() {
       <MobileHeader />
       <div className={styles.aboutUsMainContainer}>
         <h2 className="businessDesc">
-          Legacy of Providing Invaluable
-          <br /> Business Support
+          Business Support with Vision of Ultimate Growth
         </h2>
         <h2
           style={{ textAlign: "center" }}
           className={`${styles.mBusinessDesc1} mBusinessDesc`}
         >
-          Legacy of Providing
-          <br /> Invaluable Business Support
+          Business Support with Vision <br /> of Ultimate Growth
         </h2>
         <div className={styles.aboutUsHeroContainer}>
           <div>
@@ -121,23 +119,21 @@ function About() {
             />
           </div>
           <p>
-            Beacon UAE is dedicated to realising your desire to set up business
-            in the UAE through the best business consultancy services. With its
-            remarkable operations across UAE, KSA and India, Beacon has been
-            helping companies of all sizes to successfully incorporate their
-            businesses in their dream locations. Backed by the goodwill of
-            Beacon Global, our services guarantee to offer full-fledged business
-            setup services that pave an endless path for futuristic business
-            opportunities. Through economic and exceptional business formation
-            and financial, legal, and technological support, we provide amazing
-            mainland, free zone and offshore business setups making the process
-            of business establishment seamless. Through strong project
-            management skills, a comprehensive plan, and an in-depth
-            understanding of legal proceedings, we ensure your business thrives
-            in the UAE in the best possible way. We are also into providing a
-            range of services that include marketing, accounting, audit and
-            taxation, digital marketing and many more to make your transition
-            into a successful business smoother.
+            Beacon has been committed to pushing your business setup plans in
+            KSA into reality with the top business consultancy services in Saudi
+            Arabia. With services based in Jeddah, Riyadh and Dammam, and its
+            prominent services across India and UAE, Beacon carries the legacy
+            of serving clients with immense support. Being a proud entity of
+            Beacon Global, we promise to contribute to your business with
+            holistic business incorporation and business consulting services
+            that expand the scope of your business. We also provide exceptional
+            company formation, and legal, financial, and technological
+            assistance to make the business establishment and its
+            post-operations streamlined. With high-end project management
+            capabilities and a well-laid plan of business operations, we make
+            sure your business excels in KSA most efficiently. We also offer
+            accounting, tax and audit, digital marketing and various other
+            related services that can evolve and empower your business.
           </p>
         </div>
 
@@ -145,10 +141,14 @@ function About() {
 
         <div className={styles.aboutUsContainer2}>
           <h2 className="businessDesc">
-          Magnify Your Business Goals With Beacon
+            Ace Business Setup in KSA With Beacon
           </h2>
-          <h2 style={{textAlign:"center"}} className={`${styles.mBusinessDesc1} mBusinessDesc`}>
-          Magnify Your Business Goals<br/> With Beacon
+          <h2
+            style={{ textAlign: "center" }}
+            className={`${styles.mBusinessDesc1} mBusinessDesc`}
+          >
+            Ace Business Setup in KSA
+            <br /> With Beacon
           </h2>
           <div className={styles.mobilePaddingCard}>
             <div className={styles.cardMainContainer}>
@@ -229,27 +229,27 @@ function About() {
                 </div>
                 <div className={styles.cardContent}>
                   <div>
-                    <h1>Choice of Location</h1>
+                    <h1>Destination Choice</h1>
                     <p>
-                      With benefits on ownership, time to establish and profit
-                      repatriation, we offer the best business setup options in
-                      the preferred locations across the UAE.
+                      Enjoy the business incorporation options in the iconic
+                      locations of KSA with advantages on time to set up, profit
+                      repatriation, and ownership.
                     </p>
                   </div>
                   <div>
-                    <h1>Reduced Tax</h1>
+                    <h1>Tax Benefits</h1>
                     <p>
-                      We provide support in leveraging taxation benefits to
-                      promote your investment with liberal policies, which helps
-                      you to establish a business in the UAE.
+                      Get tax advantages to let your investment get promoted
+                      with liberal regulations that let you ease the business
+                      establishment in KSA.
                     </p>
                   </div>
                   <div>
-                    <h1>Advanced Digital Solutions</h1>
+                    <h1>Digital Transformation</h1>
                     <p>
-                      Moving towards the technology-driven future, we leverage
-                      the best tech infrastructure the location offers to
-                      increase opportunities through digital services.
+                      Heading towards the technology-led future, we offer high
+                      digital transformation solutions with the best
+                      technological infrastructure.
                     </p>
                   </div>
                 </div>

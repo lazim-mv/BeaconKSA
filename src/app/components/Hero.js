@@ -68,21 +68,23 @@ function Hero() {
         <div className="textOverlay">
           <div>
             <h1 className="heorHeading">
-              Launch and Expand
-              <br /> Your Business In UAE <br /> with our Expertise
+              Setup Your Business <br /> in Saudi Arabia
             </h1>
           </div>
           <div className="heroDescContainer">
             <p className="heroDesc">
-              We help you fulfill your entrepreneurial journey and dream
-              <br />
-              business setup in UAE with support on tax and accounting to
-              <br /> legal support and marketing.
+              Setting up business in KSA might seem hectic without legitimate
+              support. From streamlining the group entities to ensuring high-end
+              corporate governance, Beacon offers specialized solutions to run
+              your business in Saudi Arabia and thrive in this competitive
+              landscape.
             </p>
             <p className="mHeroDesc">
-              We help you fulfill your entrepreneurial journey and dream
-              business setup in UAE with support on tax and accounting to legal
-              support and marketing.
+              Setting up business in KSA might seem hectic without legitimate
+              support. From streamlining the group entities to ensuring high-end
+              corporate governance, Beacon offers specialized solutions to run
+              your business in Saudi Arabia and thrive in this competitive
+              landscape.
             </p>
           </div>
           <a href="/pages/Services">

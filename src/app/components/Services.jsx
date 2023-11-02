@@ -13,7 +13,7 @@ function Services() {
       img: "/NewSvgs/SVG2/hh/Group1.svg",
       heading: "Business Incorporation",
       description:
-        "Get company incorporation assistance and compliance support right after the registration process. Tell us your requirements and let us drive your investment and growth with business incorporation services",
+        "We offer business incorporation and compliance support to drive your business right. Let us know your business needs and scale your business setup process while saving on costs.",
       details: [
         "GCC National Company",
         "Limited Liability Company",
@@ -25,7 +25,7 @@ function Services() {
       img: "/NewSvgs/SVG2/hh/Group6.svg",
       heading: "Business Consultation",
       description:
-        "Our business consultation services augment your business requirements through essential aspects of businesses like people, processes, technology, and related operations.",
+        "Our team provides business consultation services to serve your business needs and guide you through the crucial aspects of business like technology, people, processes, and operations.",
       details: [
         "Government Relation Management",
         "Employee Work Permit & Visa Assistance",
@@ -40,7 +40,7 @@ function Services() {
       img: "/NewSvgs/SVG2/hh/Group2.svg",
       heading: "Financial & Accounting",
       description:
-        "Through the regular management of financial reports, accounting, and related business activities, we are involved in the analysis and reporting of financial processes.",
+        "With regular management of accounts, financial reports, and the related processes of the firm, we engage in analyzing and reporting the financial resources of your company.",
       details: [
         "Financial Statement Preparation",
         "Tax Planning & Preparation",
@@ -55,7 +55,7 @@ function Services() {
       img: "/NewSvgs/SVG2/hh/Group4.svg",
       heading: "Audit & Taxation",
       description:
-        "We engage in the routine monitoring, review, and report of the significant tax matters that impact your business with the panel of our audit and tax experts.",
+        "Through regular monitoring and review of the core tax matters that affect the business, we generate audit and tax reports relevant to your business that keep the quality alive.",
       details: [
         "Internal Audits",
         "Compliance Audits",
@@ -70,7 +70,7 @@ function Services() {
       img: "/NewSvgs/SVG2/hh/Group3.svg",
       heading: "Technology Solutions",
       description:
-        "Along with the business experience, we infuse technology into the business processes to address your specific technical needs that reimagine business models.",
+        "Our technical experts let you experience the best of business with the power of technology and address your quest for innovation by reimagining the scope of business models.",
       details: [
         "Digital Strategy",
         "Designing",
@@ -83,7 +83,7 @@ function Services() {
       img: "/NewSvgs/SVG2/hh/Group5.svg",
       heading: "Digital Marketing",
       description:
-        "Hand over all your digital marketing to-do tasks to our experts and watch through the growth plateau with the finest services that scale your brand outreach.",
+        "Let us take care of all your digital marketing requirements and take your business processes along the growth path with the strategies and services to trigger brand outreach.",
       details: [
         "Search Engine Optimization (SEO)",
         "Search Engine Marketing (Google Ads)",
