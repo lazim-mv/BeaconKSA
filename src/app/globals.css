@@ -2188,7 +2188,7 @@ li{
 
   .juriDesc{
     font-size: 12px;
-    font-size: 3.2vw;
+    font-size: 2.7vw;
     text-align: center;
   }
 
@@ -2223,8 +2223,9 @@ li{
   }
 
   .placesCard .juriContent{
-    padding: 45px 30px;
+    padding: 45px 15px;
     height: 305px;
+    gap: 0;
   }
 
   .placesCard{
@@ -2238,6 +2239,7 @@ li{
 
   .front .juriDesc{
     height: 85px;
+    margin-top: 10px;
   }
 
   .bussinessContainer{
