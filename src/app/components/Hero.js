@@ -91,7 +91,7 @@ function Hero() {
             <div className="hButtonContainer heroButton">
               <div className="visibleWrapperContainer">
                 <div className="topVisibleContainer btn">
-                  Let&lsquo;s Talk
+                  Why Saudi
                   <div className="topVisibleArrow">
                     <Image
                       src="/blueArrow.svg"
@@ -102,7 +102,7 @@ function Hero() {
                   </div>
                 </div>
                 <div className="bottomVisibleContainer btn">
-                  Let&lsquo;s Talk
+                  Why Saudi
                   <div className="bottomVisibleArrow">
                     <Image
                       src="/blueArrow.svg"

@@ -214,11 +214,11 @@ function Services() {
               </div>
             )}
             <Image
-              src="/ServicesPage/servicesPage7.svg"
+              src="/ServicesPage/servicesPage7.png"
               width={576}
               height={540}
               layout="responsive"
-              alt="serviceImg1"
+              alt="serviceImg13"
               quality={100}
               priority={true}
               unoptimized

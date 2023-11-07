@@ -52,10 +52,10 @@ function Footer() {
             <div className="footerContactTextDetails footerContactTextDetailsEmail">
               <h1>Email us:</h1>
               <a
-                href="mailto:beacon@gmail.com"
+                href="mailto:info@bmcglobal.co"
                 style={{ textTransform: "none" }}
               >
-                beacon@gmail.com
+                info@bmcglobal.co
               </a>
             </div>
           </div>
@@ -74,8 +74,8 @@ function Footer() {
               style={{ whiteSpace: "nowrap" }}
             >
               <h1>Call us on:</h1>
-              <a href="tel:+1 800 100 900">
-                <p>+1 800 100 900</p>
+              <a href="tel:+ 966 570 807 175">
+                <p>+ 966 570 807 175</p>
               </a>
             </div>
           </div>
@@ -93,10 +93,12 @@ function Footer() {
               <div className="footerContactTextDetails">
                 <h1>Head Office:</h1>
                 <p className="dAddress">
-                195 Devonshire St Boston,<br/> MA 02110
+                  Building no. 4626, Hamza Shehatah St,
+                  <br /> Al-Baghdadiyah Al-Gharbiyah, Jeddah 22235
                 </p>
                 <p className="mAddress">
-                195 Devonshire St Boston,<br/> MA 02110
+                  Building no. 4626, Hamza Shehatah St, Al-Baghdadiyah
+                  Al-Gharbiyah, Jeddah 22235
                 </p>
               </div>
             </a>
