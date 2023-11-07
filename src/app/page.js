@@ -34,7 +34,7 @@ export default function Home() {
     return () => clearTimeout(timeoutId);
   }, []);
 
-  const useBackgroundImage = true;
+  // const useBackgroundImage = true;
 
   return (
     <>
