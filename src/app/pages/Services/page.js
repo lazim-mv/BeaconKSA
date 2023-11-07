@@ -214,7 +214,7 @@ function Services() {
               </div>
             )}
             <Image
-              src="/ServicesPage/servicesPage7.png"
+              src="/ServicesPage/ServicesPage7.png"
               width={576}
               height={540}
               layout="responsive"
