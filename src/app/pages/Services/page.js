@@ -244,7 +244,7 @@ function Services() {
               </div>
             )}
             <Image
-              src="/NewSvgs/Backgrounds/bguae10.svg"
+              src="/ServicesPage/ServicesPage8.png"
               width={500}
               height={500}
               layout="responsive"
