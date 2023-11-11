@@ -95,32 +95,6 @@ function Services() {
     },
   ];
 
-  const sellingCardData = [
-    {
-      img: "/NewSvgs/SVG7/G1.svg",
-      heading: "Optimising Investment Budgets",
-      description:
-        "Make wise investments with our customized packages to suit what your business demands. We help you to fine-tune the budgets based on the timeframe and the nature of the business.",
-    },
-    {
-      img: "/NewSvgs/SVG7/G2.svg",
-      heading: "In-depth Field Expertise",
-      description:
-        "Get benefits from our global expertise and the vast knowledge of our team to drive your business quest in the right direction. Make your business decisions the best with our specialised services.",
-    },
-    {
-      img: "/NewSvgs/SVG7/G3.svg",
-      heading: "Transparency & Privacy",
-      description:
-        "We follow 100% transparency and privacy on all business processes and provide business consultation with a set of strategies aligned to your business goals.",
-    },
-    {
-      img: "/NewSvgs/SVG7/G4.svg",
-      heading: "Dedicated Team",
-      description:
-        "Don’t worry about who can address all your needs in time! Our dedicated team is always at your reach to support your requirements and concerns at the right time without delay.",
-    },
-  ];
 
   const [loaded, setLoaded] = useState(false);
 
