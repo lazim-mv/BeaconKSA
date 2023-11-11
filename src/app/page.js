@@ -12,8 +12,6 @@ import { useEffect, useState } from "react";
 import Places from "./components/Places";
 
 export default function Home() {
-  const [hideWhiteScreen, setHideWhiteScreen] = useState(false);
-  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -22,7 +20,7 @@ export default function Home() {
         // whiteScreen.style.opacity = '0';
         whiteScreen.classList.add("hidden");
       }
-    }, 250); // 1000 milliseconds = 1 second
+    }, 1000); // 1000 milliseconds = 1 second
 
     // Cleanup the timeout to avoid memory leaks
     return () => clearTimeout(timeoutId);
@@ -34,7 +32,6 @@ export default function Home() {
     <>
       <Header />
       <MobileHeader />
-      {/* {!hideWhiteScreen && ( */}
       <div id="white-screen">
         <div class="loading">
           <div class="outer"></div>
@@ -42,7 +39,6 @@ export default function Home() {
         </div>
         <h1>Your Global Advisory Partner For Business Success</h1>
       </div>
-      {/* )} */}
       <div className="mainContainer">
         <Hero />
         {/* <BusinessSetup /> */}
