@@ -34,15 +34,15 @@ export default function Home() {
     <>
       <Header />
       <MobileHeader />
-      {!hideWhiteScreen && (
-        <div id="white-screen">
-          <div class="loading">
-            <div class="outer"></div>
-            <div class="inner"></div>
-          </div>
-          <h1>Your Global Advisory Partner For Business Success</h1>
+      {/* {!hideWhiteScreen && ( */}
+      <div id="white-screen">
+        <div class="loading">
+          <div class="outer"></div>
+          <div class="inner"></div>
         </div>
-      )}
+        <h1>Your Global Advisory Partner For Business Success</h1>
+      </div>
+      {/* )} */}
       <div className="mainContainer">
         <Hero />
         {/* <BusinessSetup /> */}
