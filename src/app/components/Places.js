@@ -8,21 +8,21 @@ function Places() {
 
   const pageData = [
     {
-      img: "/Jurisdiction/Jeddah.svg",
+      img: "/Jurisdiction/Jeddah.jpg",
       heading: "JEDDAH",
       Number: "01",
       description:
         "Make the most out of the plethora of opportunities that lie in the hands of Jeddah, Saudi Arabia backed by factors like low debt, macroeconomic stability, and high budget surplus. With the worldwide attention for offering an advanced institutional framework, Jeddah is an ideal place to run your business. We travel the extra mile to redefine your business with innovative solutions to cater to your business needs.",
     },
     {
-      img: "/Jurisdiction/Damam.svg",
+      img: "/Jurisdiction/Dammam.jpg",
       heading: "DAMMAM",
       Number: "02",
       description:
         "Discover the significant revenue opportunities, expand your business, improve credibility, and open the doors of business potential through the amazing incorporation possibilities that Dammam has for investors. Take advantage of the surge in demand for unique business ventures in the booming economy and participate in the evolving market to stay ahead of the curve in the region.",
     },
     {
-      img: "/Jurisdiction/Riyadh.svg",
+      img: "/Jurisdiction/Riyadh.jpg",
       heading: "RIYADH",
       Number: "03",
       description:
