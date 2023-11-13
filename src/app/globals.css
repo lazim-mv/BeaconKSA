@@ -1363,7 +1363,6 @@ li{
 
 .faqNumber{
   color: #11215B;
-  font-family: Gellix;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -2050,11 +2049,28 @@ li{
     width: 100%;
     height: 100vh;
     background-color: white;
-    z-index: 9999; /* Make sure it's on top of other content */
-    /* You can also add transitions for a smoother effect */
+    z-index: 9999; 
     transition: opacity 1s ease-in-out;
     opacity: 1; /* Initially visible */
     overflow: hidden;
+  }
+
+  #white-screen .changeTextContainer{
+    margin-left: -40px;
+    gap: 5px;
+  }
+
+  .changeTextContainer .spinnerText{
+    text-align: center;
+    font-size: 3.5vw;
+    white-space: nowrap;
+  }
+
+  .changeTextContainer .changeText{
+    text-align: left;
+    font-size: 3.5vw;
+    white-space: nowrap;
+    width: 75px;
   }
 
   .hContainer{
@@ -2808,36 +2824,85 @@ li{
   z-index: 9999; /* Make sure it's on top of other content */
   /* You can also add transitions for a smoother effect */
   transition: height 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition-delay: 2s;
   opacity: 1; /* Initially visible */
   overflow: hidden;
 }
 
 #white-screen.hidden {
   background-color: white;
-  /* opacity: 0; */
   height: 0;
-  /* transition: opacity 2s cubic-bezier(0.25, 0.1, 0.25, 1), height 0.8s cubic-bezier(0.25, 0.1, 0.25, 1); */
 }
-
-.loadingHeading{
-  color: #fff;
-  text-align: center;
-  /* font-size: 15px; */
-  font-style: normal;
-  font-weight: 600;
-  line-height: 120%; /* 19.2px */
-  text-transform: uppercase;
-}
-
 
 #white-screen {
   height: 100%;
 
-  background: #fff; /* Use the background color directly */
+  background: #fff; 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
+}
+
+.outer-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: #5073f0;
+  border-radius: 50%;
+  animation: pulsar 1.8s infinite;
+}
+
+.inner-circle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 10px solid #11215B;
+  border-radius: 50%;
+  animation: shrink 1.8s infinite;
+}
+
+@keyframes pulsar {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes shrink {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+}
+
+.changeTextContainer{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 110px;
+  margin-bottom: 120px;
+}
+
+.spinnerText{
+  font-size: 15px;
+}
+
+.changeText {
+  font-size: 15px;
+  font-weight: 600;
+  width: 270px;
+  color: #11215B;
 }
 
 .loader {
@@ -3032,51 +3097,4 @@ li{
 100% {
   transform: scale(1, 1);
 }
-}
-
-.loading {
-  margin: 100px auto;
-  width: 100px;
-  position: relative;
-}
-
-.outer, 
-.inner {  
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  animation: spin 1.5s infinite;
-  animation-timing-function: cubic-bezier(.26,.66,.36,.34);
-  transform: perspective(200px);
-}
-
-.outer {
-  border: 10px solid #11215B ;
-  border-radius: 50%;
-  animation-delay: 0.4s;
-}
-
-.inner {
-  content: "";
-  width: 82px;
-  height: 82px;
-  display: block;
-  top: 9px;
-  left: 9px;
-  position: relative;
-  border-radius: 50%;
-  border: 10px solid #0d446f;
-  animation-delay: 1.5s;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotateY(0);
-  }
-  40% {
-    transform: rotateY(180deg);
-  }
-  100% {
-    transform: rotateY(180deg);
-  }
 }

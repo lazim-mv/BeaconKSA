@@ -12,6 +12,14 @@ import { useEffect, useState } from "react";
 import Places from "./components/Places";
 
 export default function Home() {
+  const [textIndex, setTextIndex] = useState(0);
+  const textOptions = [
+    "Incorporation",
+    "Accounting",
+    "Auditing",
+    "Digital Strategy",
+    "Digital Marketing",
+  ];
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -20,24 +28,31 @@ export default function Home() {
         // whiteScreen.style.opacity = '0';
         whiteScreen.classList.add("hidden");
       }
-    }, 1000); // 1000 milliseconds = 1 second
+    }, 1000);
 
-    // Cleanup the timeout to avoid memory leaks
     return () => clearTimeout(timeoutId);
   }, []);
 
-  // const useBackgroundImage = true;
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTextIndex((prevIndex) => (prevIndex + 1) % textOptions.length);
+    }, 450);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <>
       <Header />
       <MobileHeader />
       <div id="white-screen">
-        <div class="loading">
-          <div class="outer"></div>
-          <div class="inner"></div>
+        <div className="outer-circle">
+          <div className="inner-circle"></div>
         </div>
-        <h1>Your Global Advisory Partner For Business Success</h1>
+        <div className="changeTextContainer">
+          <h1 className="spinnerText">Your Global Advisory Partner For</h1>
+          <h1 className="changeText">{textOptions[textIndex]}</h1>
+        </div>
       </div>
       <div className="mainContainer">
         <Hero />
@@ -55,13 +70,13 @@ export default function Home() {
   );
 }
 
-// export async function getStaticProps() {
-//   // Fetch data here (e.g., from an API)
-//   const data = "Some data fetched at build time";
+export async function getStaticProps() {
+  // Fetch data here (e.g., from an API)
+  const data = "Some data fetched at build time";
 
-//   return {
-//     props: {
-//       data,
-//     },
-//   };
-// }
+  return {
+    props: {
+      data,
+    },
+  };
+}
