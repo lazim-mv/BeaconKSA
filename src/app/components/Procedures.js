@@ -5,7 +5,6 @@ import React, { useEffect, useState } from "react";
 function Procedures() {
   const pageData = [
     {
-      img: "/Jurisdiction/Jeddah.svg",
       heading: "MISA license",
       Number: "01",
       description:
@@ -13,7 +12,6 @@ function Procedures() {
       dash: "------------------------",
     },
     {
-      img: "/Jurisdiction/Damam.svg",
       heading: "Certificate from Ministry of Commerce and industry",
       Number: "02",
       description:
@@ -21,7 +19,6 @@ function Procedures() {
       dash: "------------------------",
     },
     {
-      img: "/Jurisdiction/Riyadh.svg",
       heading: "Ministry of Labor and Social Development (MLSD)",
       Number: "03",
       description:
@@ -29,7 +26,6 @@ function Procedures() {
       //dash: "------------------------------",
     },
     {
-      img: "/Jurisdiction/Jeddah.svg",
       heading: "General Organization of Social Insurance (GOSI)",
       Number: "04",
       description:
@@ -37,7 +33,6 @@ function Procedures() {
       dash: "------------------------",
     },
     {
-      img: "/Jurisdiction/Damam.svg",
       heading: "General Authority of Zakat and Tax (GAZT)",
       Number: "05",
       description:
@@ -45,7 +40,6 @@ function Procedures() {
       dash: "------------------------",
     },
     {
-      img: "/Jurisdiction/Riyadh.svg",
       heading: "Registration of Wasel",
       Number: "06",
       description:

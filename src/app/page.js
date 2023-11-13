@@ -54,12 +54,10 @@ export default function Home() {
           <h1 className="changeText">{textOptions[textIndex]}</h1>
         </div>
       </div>
-      <div className="mainContainer">
+      <div className="mainContainer" >
         <Hero />
-        {/* <BusinessSetup /> */}
         <Services />
         <Locations />
-        {/* <Jurisdiction /> */}
         <Places />
         <Clients />
         <Faq />
@@ -70,13 +68,13 @@ export default function Home() {
   );
 }
 
-// export async function getStaticProps() {
-//   // Fetch data here (e.g., from an API)
-//   const data = "Some data fetched at build time";
+export async function getStaticProps() {
+  // Fetch data here (e.g., from an API)
+  const data = "Some data fetched at build time";
 
-//   return {
-//     props: {
-//       data,
-//     },
-//   };
-// }
+  return {
+    props: {
+      data,
+    },
+  };
+}

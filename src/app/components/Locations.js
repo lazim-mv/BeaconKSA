@@ -11,11 +11,14 @@ function Locations() {
       <div className="locationFlexContainer">
         <div className="locationImgContainer">
           <Image
-            src="/location.png"
+            src="/location.jpg"
             width={500}
             height={500}
             alt="ImageLocation"
             layout="responsive"
+            quality={100}
+            priority={true}
+            unoptimized
           />
         </div>
         <div className="locationContentContainer">

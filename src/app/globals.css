@@ -2867,24 +2867,6 @@ li{
   animation: shrink 1.8s infinite;
 }
 
-@keyframes pulsar {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-}
-
-@keyframes shrink {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.7);
-  }
-}
-
 .changeTextContainer{
   display: flex;
   gap: 10px;
@@ -2904,6 +2886,26 @@ li{
   width: 270px;
   color: #11215B;
 }
+
+@keyframes pulsar {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes shrink {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+}
+
+
 
 .loader {
   position: relative;
