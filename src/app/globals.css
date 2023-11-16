@@ -306,7 +306,7 @@ li{
   width: 100%;  
   height: auto;
   object-fit: cover;
-  width: 669px !important;
+  width: 600px !important;
   margin-left: auto;
   margin-right: 100px;
   margin-top: 50px;
@@ -789,7 +789,7 @@ li{
 
 .cardMainContainer{
   display: flex;
-  gap: 30px;
+  gap: 28px;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -800,13 +800,13 @@ li{
   gap: 30px;
   padding-top: 60px;
   padding-bottom: 60px;
-  padding: 60px 30px;
+  padding: 60px 26px;
   border-radius: 10px;
 }
 
 .cardContainer {
   width: 328px;
-  width: 31.4%;
+  width: 31%;
   /* height: 304px; */
   /* flex-shrink: 0; */
   background-color: rgba(247, 247, 248, 1);
