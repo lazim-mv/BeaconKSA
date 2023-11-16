@@ -88,31 +88,36 @@ function Procedures() {
         Steps and procedures
       </h2>
       {!isMobileScreen && dataLoaded && !loaded ? ( // Check dataLoaded before rendering desktop view
-        <div className="proceduresCardContainer">
-          {pageData.map((data, index) => (
-            <div className="verticalContainer" key={index}>
-              <div className="contentContainer">
-                <div className="extraContainer">
-                  <div className="circleNumber">
-                    <h1 className="servicesHeading" style={{ color: "#1125B" }}>
-                      {data.Number}
+        <div className="proceduresCardContainerWrapper">
+          <div className="proceduresCardContainer">
+            {pageData.map((data, index) => (
+              <div className="verticalContainer" key={index}>
+                <div className="contentContainer">
+                  <div className="extraContainer">
+                    <div className="circleNumber">
+                      <h1
+                        className="servicesHeading"
+                        style={{ color: "#1125B" }}
+                      >
+                        {data.Number}
+                      </h1>
+                    </div>
+                    <div
+                      className="lineContainer"
+                      style={{ color: "#fff", fontSize: "30px" }}
+                    >
+                      {data.dash}
+                    </div>
+                  </div>
+                  <div className="proceduresHeadingContainer">
+                    <h1 className="proceduresHeading" style={{ color: "#fff" }}>
+                      {data.heading}
                     </h1>
                   </div>
-                  <div
-                    className="lineContainer"
-                    style={{ color: "#fff", fontSize: "30px" }}
-                  >
-                    {data.dash}
-                  </div>
-                </div>
-                <div className="proceduresHeadingContainer">
-                  <h1 className="proceduresHeading" style={{ color: "#fff" }}>
-                    {data.heading}
-                  </h1>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       ) : isMobileScreen ? (
         <Image
