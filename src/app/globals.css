@@ -106,6 +106,10 @@ li{
   cursor: pointer;
 }
 
+.MobileLottieContainer{
+  display: none;
+}
+
 .testimonialButtonContainer{
   display: flex;
   gap: 10px;
@@ -239,7 +243,15 @@ li{
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #11215B;
+}
+
+.heroContainer .heroButton .btn{
+  color: #FFF;
+}
+
+.heroArrows{
+  height: 18px !important;
 }
 
 .heroContainer .topVisibleArrow{
@@ -294,8 +306,6 @@ li{
   height: 100%;
   position: relative;
   height: auto;
-  /* padding-right: 130px;
-  padding-top: 50px; */
 }
 
 .imageOverlay {
@@ -306,10 +316,6 @@ li{
   width: 100%;  
   height: auto;
   object-fit: cover;
-  width: 600px !important;
-  margin-left: auto;
-  margin-right: 100px;
-  margin-top: 50px;
 }
 
 .MobilehImage{
@@ -321,7 +327,7 @@ li{
 }
 
 .heroDescContainer{
-  width: 35%;
+  width: 65%;
 }
 
 .textOverlay {
@@ -332,16 +338,11 @@ li{
   bottom: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  /* background-color: rgba(0, 0, 0, 0.2); */
-  width: 100%;
   height: 100%;
-  /* color: white;  */
   gap: 30px;
   text-align: center;
-  padding-left: 135px; /* Adjust as needed */
-  /* padding-top: 300px;  */
 }
 
 .textOverlay h1 {
@@ -352,7 +353,7 @@ li{
   font-weight: 600;
   line-height: 120%; /* 76.8px */
   text-transform: capitalize;
-  text-align: left;
+  text-align: center;
   margin-bottom: -10px;
   white-space: nowrap;
   margin-top: 57px;
@@ -364,7 +365,7 @@ li{
   font-style: normal;
   font-weight: 400;
   line-height: 140%; 
-  text-align: justify;
+  text-align: center;
 }
 
 .mainContainer{
@@ -522,10 +523,11 @@ li{
   padding-bottom: 0;
   display: flex;
   flex-direction: column;
+  background-color: #F7F7F8;
   justify-content: center;
   align-items: center;
   gap:60px;
-  padding: 0px 135px;
+  padding: 100px 135px;
 }
 
 .placesContainer .businessContentContainer{
@@ -535,53 +537,20 @@ li{
 
 .scrollContainer{
   width: 100%;
-  height: 415px;
+  height: 373px;
 }
 
 .placesContainer .juriMainCardContainer{
   width: 100%;
-}
-
-.placesCard {
-  position: relative;
-  box-shadow: none;
-  background: none;
-  width: 100%;
-}
-
-.card-side {
-  border-radius: 10px;
-  transition: all 0.8s ease;
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: white;
-  height: auto;
-}
-
-.card-side.back {
-  transform: rotateY(-180deg);
-  padding: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .placesCardImage img{
   width: auto;
-  height: 430px !important;
+  height: 373px !important;
   object-fit: cover;
   border-radius: 10px;
-}
-
-.card-side.front {
-  background-color:#11215B;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.placesCard .juriContent{
-  padding: 40px 15px;
-  height: 430px;
 }
 
 .circleNumber{
@@ -605,18 +574,63 @@ li{
   text-transform: capitalize;
 }
 
-.placesCard .front{
+
+.frontNew .juriContent{
+  background-color: transparent;
+  border-radius: 0;
+  align-items: center;
+  padding: 0;
+  height: auto;
+}
+
+.frontNew .juriContent .juriDesc{
+  height: 200px;
+}
+
+.cardNew {
+  width: 31%;
+  height: 373px;
+  perspective: 500px;
+  display: flex;
+  background: transparent;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.cardNew:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.frontNew{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  padding: 0 20px;
 }
 
-.placesCard:hover .card-side.front {
-  transform: rotateY(180deg);
+.frontNew,
+.backNew {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #11215B;
+  text-align: center;
+  border-radius: 11px;
+  backface-visibility: hidden;
 }
 
-.placesCard:hover .card-side.back {
-  transform: rotateY(0deg);
-  overflow-y: hidden;
-  border-radius: 10px;
+.backNew {
+  background: transparent;
+  color: white;
+  transform: rotateY( 180deg );
 }
 
 /* Places End */
@@ -1203,6 +1217,16 @@ li{
   border-radius: 10px;
 }
 
+.testiImg{
+  position: relative;
+  width: 15%;
+  height: 40px;
+}
+
+.testiImg img{
+  border-radius: 50%;
+}
+
 .testimonialProfile:nth-child(3){
   margin: 0px;
 }
@@ -1438,7 +1462,7 @@ li{
 }
 
 .contactContainer {
-  background: url("../../public/NewSvgs/Backgrounds/DcontactKsa.png");
+  background: url("../../public/NewSvgs/Backgrounds/DcontactKsa.webp");
   width: 100%;
   height: 450px;
   object-fit: cover;
@@ -1981,6 +2005,14 @@ li{
     font-size: 12px !important;
   }
 
+  .DesktopLottieContainer{
+    display: none;
+  }
+
+  .MobileLottieContainer{
+    display: block;
+  }
+
   .businessHeading{
     margin-bottom: 3px;
     padding: 5px 15px;
@@ -2070,23 +2102,22 @@ li{
   }
 
   #white-screen .changeTextContainer{
-    margin-left: -40px;
+    margin-left: 0px;
+    flex-direction: column;
     gap: 5px;
   }
 
   .changeTextContainer .spinnerText{
     text-align: center;
-    font-size: 3.5vw;
+    font-size: 5vw;
     white-space: nowrap;
   }
 
   .changeTextContainer .changeText{
-    text-align: left;
-    font-size: 3.5vw;
+    text-align: center;
+    font-size: 5vw;
     white-space: nowrap;
-    width: 75px;
   }
-
   .hContainer{
     display: none;
   }
@@ -2097,11 +2128,9 @@ li{
 
   .textOverlay{
     padding: 0 24px;
-    top: 155px;
-    /* margin-top: 74px; */
+    top: 32vh;
     align-items: center;
     justify-content: flex-start;
-    /* height: 600px; */
   }
 
   .heroContainer {
@@ -2114,7 +2143,7 @@ li{
   }
 
   .hImage{
-    display: none;
+    height: 80vh !important;
   }
 
   .MobilehImage{
@@ -2247,7 +2276,7 @@ li{
   .scrollContainer {
     width: 100%; /* Allow the container to expand horizontally */
     overflow-x: auto; /* Enable horizontal scrolling */
-    height: 310px;
+    height: 400px;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
   }
@@ -2848,6 +2877,7 @@ li{
   height: 0;
 }
 
+
 #white-screen {
   height: 100%;
 
@@ -2859,27 +2889,8 @@ li{
   gap: 20px;
 }
 
-.outer-circle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 80px;
-  height: 80px;
-  background-color: #5073f0;
-  border-radius: 50%;
-  animation: pulsar 1.8s infinite;
-}
+/* Cortana Animation outer-circle Start */
 
-.inner-circle {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background-color: #fff;
-  border: 10px solid #11215B;
-  border-radius: 50%;
-  animation: shrink 1.8s infinite;
-}
 
 .changeTextContainer{
   display: flex;
@@ -2891,33 +2902,23 @@ li{
 }
 
 .spinnerText{
-  font-size: 15px;
+  color: #02040E;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 28.8px */
+  text-transform: capitalize;
 }
 
 .changeText {
-  font-size: 15px;
+  font-size: 24px;
   font-weight: 600;
   width: 270px;
   color: #11215B;
 }
 
-@keyframes pulsar {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-}
 
-@keyframes shrink {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.7);
-  }
-}
 
 
 

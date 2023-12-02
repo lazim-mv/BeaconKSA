@@ -1,8 +1,5 @@
-import Head from "next/head";
 import "./globals.css";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import localFont from "next/font/local";
 
 export const metadata = {
   title: "Beacon - Setup Your Business in Saudi Arabia",
@@ -32,10 +29,27 @@ export const metadata = {
   },
 };
 
+const Gellix = localFont({
+  src: [
+    {
+      path: "./fonts/Gellix-Regular.woff2",
+      weight: "400",
+      style: "normal",
+      variable: "--font-Sora",
+      display : "swap",
+    },
+    {
+      path: "./fonts/Gellix-SemiBold.woff2",
+      weight: "600",
+      style: "normal",
+      variable: "--font-Sora",
+      display : "swap",
+    },
+  ],
+});
+
 export default function RootLayout({ children }) {
-  const baseUrl =
-    "https://bmcglobal.co/linkImageWhatsApp.png" ||
-    "https://beacon-alpha.vercel.app/linkImageWhatsApp.png";
+
   return (
     <html lang="en">
       <head>
@@ -45,20 +59,16 @@ export default function RootLayout({ children }) {
           type="image/svg+xml"
           sizes="16x16 32x32 48x48"
         />
-      </head>
-      <Head>
-        <link
-          rel="icon"
-          href="/GREEN.svg"
-          type="image/svg+xml"
-          sizes="16x16 32x32 48x48"
+
+        <meta
+          property="og:image"
+          content="https://uae.bmcglobal.co/linkImageWhatsApp.png"
         />
-        <meta property="og:image" content={baseUrl} />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1024" />
         <meta property="og:image:height" content="1024" />
-      </Head>
-      <body className={inter.className}>{children}</body>
+      </head>
+      <body className={Gellix.className}>{children}</body>
     </html>
   );
 }

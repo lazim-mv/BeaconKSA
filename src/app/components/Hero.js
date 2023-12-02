@@ -45,7 +45,7 @@ function Hero() {
       <div className="imageWithText">
         <Image
           className="hImage"
-          src="/hero.png"
+          src="/hero.webp"
           alt="Asian Engineer"
           width={1366}
           height={670}
@@ -54,68 +54,61 @@ function Hero() {
           priority={true}
           unoptimized
         />
-        <Image
-          className="MobilehImage"
-          src="/hero.png"
-          alt="Asians Engineer"
-          width={0}
-          height={600}
-          layout="responsive"
-          quality={100}
-          priority={true}
-          unoptimized
-        />
         <div className="textOverlay">
-          <div>
-            <h1 className="heorHeading">
-              Setup Your Business <br /> in Saudi Arabia
-            </h1>
-          </div>
-          <div className="heroDescContainer">
-            <p className="heroDesc">
-              Setting up business in KSA might seem hectic without legitimate
-              support. From streamlining the group entities to ensuring high-end
-              corporate governance, Beacon offers specialized solutions to run
-              your business in Saudi Arabia and thrive in this competitive
-              landscape.
-            </p>
-            <p className="mHeroDesc">
-              Setting up business in KSA might seem hectic without legitimate
-              support. From streamlining the group entities to ensuring high-end
-              corporate governance, Beacon offers specialized solutions to run
-              your business in Saudi Arabia and thrive in this competitive
-              landscape.
-            </p>
-          </div>
-          <a href="/pages/Services">
-            <div className="hButtonContainer heroButton">
-              <div className="visibleWrapperContainer">
-                <div className="topVisibleContainer btn">
-                  Why Saudi
-                  <div className="topVisibleArrow">
-                    <Image
-                      src="/blueArrow.svg"
-                      width={21}
-                      height={21}
-                      alt="heroContact"
-                    />
+          {/* <div className="heroContent"> */}
+            <div>
+              <h1 className="heorHeading">
+                Setup Your Business <br /> in Saudi Arabia
+              </h1>
+            </div>
+            <div className="heroDescContainer">
+              <p className="heroDesc">
+                Setting up business in KSA might seem hectic without legitimate
+                support. From streamlining the group entities to ensuring
+                high-end corporate governance, Beacon offers specialized
+                solutions to run your business in Saudi Arabia and thrive in
+                this competitive landscape.
+              </p>
+              <p className="mHeroDesc">
+                Setting up business in KSA might seem hectic without legitimate
+                support. From streamlining the group entities to ensuring
+                high-end corporate governance, Beacon offers specialized
+                solutions to run your business in Saudi Arabia and thrive in
+                this competitive landscape.
+              </p>
+            </div>
+            <a href="/pages/Services">
+              <div className="hButtonContainer heroButton">
+                <div className="visibleWrapperContainer">
+                  <div className="topVisibleContainer btn">
+                    Why Saudi
+                    <div className="topVisibleArrow">
+                      <Image
+                        className="heroArrows"
+                        src="/whiteArrow.svg"
+                        width={21}
+                        height={18}
+                        alt="heroContact"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="bottomVisibleContainer btn">
-                  Why Saudi
-                  <div className="bottomVisibleArrow">
-                    <Image
-                      src="/blueArrow.svg"
-                      width={21}
-                      height={21}
-                      alt="heroContact"
-                    />
+                  <div className="bottomVisibleContainer btn">
+                    Why Saudi
+                    <div className="bottomVisibleArrow">
+                      <Image
+                        className="heroArrows"
+                        src="/whiteArrow.svg"
+                        width={21}
+                        height={18}
+                        alt="heroContact"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </a>
-        </div>
+            </a>
+          </div>
+        {/* </div> */}
       </div>
       {/* <div className="clientsImgContainer">
         <Brands imageSources={imageSources} initialAnimateValue ="-160%" />;

@@ -8,21 +8,21 @@ function Places() {
 
   const pageData = [
     {
-      img: "/Jurisdiction/Jeddah.jpg",
+      img: "/Jurisdiction/Jeddah.webp",
       heading: "JEDDAH",
       Number: "01",
       description:
         "Make the most out of the plethora of opportunities that lie in the hands of Jeddah, Saudi Arabia backed by factors like low debt, macroeconomic stability, and high budget surplus. With the worldwide attention for offering an advanced institutional framework, Jeddah is an ideal place to run your business. We travel the extra mile to redefine your business with innovative solutions to cater to your business needs.",
     },
     {
-      img: "/Jurisdiction/Dammam.jpg",
+      img: "/Jurisdiction/Dammam.webp",
       heading: "DAMMAM",
       Number: "02",
       description:
         "Discover the significant revenue opportunities, expand your business, improve credibility, and open the doors of business potential through the amazing incorporation possibilities that Dammam has for investors. Take advantage of the surge in demand for unique business ventures in the booming economy and participate in the evolving market to stay ahead of the curve in the region.",
     },
     {
-      img: "/Jurisdiction/Riyadh.jpg",
+      img: "/Jurisdiction/Riyadh.webp",
       heading: "RIYADH",
       Number: "03",
       description:
@@ -65,28 +65,34 @@ function Places() {
       <div className="scrollContainer">
         <div className="juriMainCardContainer" ref={placesContainerRef}>
           {pageData.map((data, index) => (
-            <div class="placesCard " key={index}>
-              <div class="card-side back placesCardImage">
-                <Image
-                  src={data.img}
-                  width={500}
-                  height={500}
-                  alt={`juri ${index}`}
-                  layout="responsive"
-                  quality={100}
-                  priority={true}
-                  unoptimized
-                  objectFit="cover"
-                />
-              </div>
-              <div className="juriContent card-side front">
-                <div className="circleNumber">
-                  <h1>{data.Number}</h1>
+            <div className="cardNew" key={index}>
+              <div className="content">
+                <div className="frontNew">
+                  <div className="juriContent ">
+                    <div className="circleNumber">
+                      <h1>{data.Number}</h1>
+                    </div>
+                    <h1 style={{ color: "#fff" }} className="servicesHeading">
+                      {data.heading}
+                    </h1>
+                    <p className="juriDesc">{data.description}</p>
+                  </div>
                 </div>
-                <h1 style={{ color: "#fff" }} className="servicesHeading">
-                  {data.heading}
-                </h1>
-                <p className="juriDesc">{data.description}</p>
+                <div className="backNew">
+                  <div className=" placesCardImage">
+                    <Image
+                      src={data.img}
+                      width={500}
+                      height={500}
+                      alt={`juri ${index}`}
+                      layout="responsive"
+                      quality={100}
+                      unoptimized
+                      objectFit="cover"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           ))}
