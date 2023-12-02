@@ -20,19 +20,19 @@ function Footer() {
         <div className="footerContentContainer">
           <ul className="footercontent">
             <a href="/">
-              <li>Home</li>
+              <p>Home</p>
             </a>
             <a href="/pages/About">
-              <li>About Us</li>
+              <p>About Us</p>
             </a>
             <a href="/pages/Services">
-              <li>Services</li>
+              <p>Services</p>
             </a>
-            <a>
-              <li>Blogs</li>
+            <a href="/">
+              <p>Blogs</p>
             </a>
             <a href="/pages/Contact">
-              <li>Contact</li>
+              <p>Contact</p>
             </a>
           </ul>
         </div>

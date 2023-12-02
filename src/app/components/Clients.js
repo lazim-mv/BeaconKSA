@@ -11,14 +11,14 @@ function Clients() {
         "“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”",
       name: "Omar Abdallah",
       designation: "Riyadh, KSA",
-      img: "/profilePic3.jpg",
+      img: "/profilePic3.webp",
     },
     {
       message:
         "“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”",
       name: "Muhammed",
       designation: "Jeddah, KSA",
-      img: "/profilePic4.jpg",
+      img: "/profilePic4.webp",
     },
     {
       message:

@@ -1,45 +1,10 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
-import React, { useEffect, useState } from "react";
-import { ScrollingLogos } from "./Clients";
-import Brands from "./Brands";
+import React from "react";
+
 
 function Hero() {
-  // const imageSources = [
-  //   "/clients/newBrands/1.svg",
-  //   "/clients/newBrands/2.svg",
-  //   "/clients/newBrands/3.svg",
-  //   "/clients/newBrands/4.svg",
-  //   "/clients/newBrands/5.svg",
-  //   "/clients/newBrands/6.svg",
-  //   "/clients/newBrands/1.svg",
-  //   "/clients/newBrands/2.svg",
-  //   "/clients/newBrands/3.svg",
-  //   "/clients/newBrands/4.svg",
-  //   "/clients/newBrands/5.svg",
-  //   "/clients/newBrands/6.svg",
-  //   "/clients/newBrands/1.svg",
-  //   "/clients/newBrands/2.svg",
-  //   "/clients/newBrands/3.svg",
-  //   "/clients/newBrands/4.svg",
-  //   "/clients/newBrands/5.svg",
-  //   "/clients/newBrands/6.svg",
-  //   "/clients/newBrands/1.svg",
-  //   "/clients/newBrands/2.svg",
-  //   "/clients/newBrands/3.svg",
-  //   "/clients/newBrands/4.svg",
-  //   "/clients/newBrands/5.svg",
-  //   "/clients/newBrands/6.svg",
-  //   "/clients/newBrands/1.svg",
-  //   "/clients/newBrands/2.svg",
-  //   "/clients/newBrands/3.svg",
-  //   "/clients/newBrands/4.svg",
-  //   "/clients/newBrands/5.svg",
-  //   "/clients/newBrands/6.svg",
-  //   // Add more image sources as needed
-  // ];
-
+ 
   return (
     <div className="heroContainer">
       <div className="imageWithText">

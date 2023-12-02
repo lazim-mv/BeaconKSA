@@ -8,62 +8,6 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-
-
-
-@font-face {
-  font-family: 'Gellix';
-  src: url('/Fonts/Gellix/Gellix-Bold.ttf') format('truetype');
-  font-weight: 700; /* Bold font weight */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gellix';
-  src: url('/Fonts/Gellix/Gellix-SemiBold.ttf') format('truetype');
-  font-weight: 600; /* Semi-Bold font weight */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gellix';
-  src: url('/Fonts/Gellix/Gellix-Medium.ttf') format('truetype');
-  font-weight: 500; /* Medium font weight */
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'Gellix';
-  src: url('/Fonts/Gellix/Gellix-Regular.ttf') format('truetype');
-  font-weight: 400; /* Regular font weight */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gellix';
-  src: url('/Fonts/Gellix/Gellix-Light.ttf') format('truetype');
-  font-weight: 300; /* Light font weight */
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gellix';
-  src: url('/Fonts/Gellix/Gellix-Thin.ttf') format('truetype');
-  font-weight: 200; /* Extra-Light font weight */
-  font-style: normal;
-}
-
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 *{
   box-sizing: border-box;
   margin: 0;
@@ -72,11 +16,8 @@
 
 body {
   background: #FFF;
-  font-family: 'Gellix', sans-serif !important;
-
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; 
-
   scrollbar-width: thin; /* Width of the scrollbar */
   scrollbar-color: transparent transparent;
 }
@@ -1537,7 +1478,7 @@ li{
   gap: 35px;
 }
 
-.footercontent li{
+.footercontent p{
   color: #FFF;
   font-size: 16px;
   font-style: normal;
@@ -1881,7 +1822,7 @@ li{
   width: 100%;
   position: absolute;
   top: 10%;
-  left: 12%;
+  left: 10%;
 }
 
 .verticalContainer{

@@ -1,15 +1,12 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
 
 function Header() {
   const [isActive, setIsActive] = useState("Home");
 
   const menuList = [
-    // "Our Presence ⮟"
     { text: "Home", href: "/" },
-    // { text: "Our Presence", href: "/" },
     { text: "About Us", href: "/pages/About" },
     { text: "Services", href: "/pages/Services" },
     // { text: "Blogs", href: "/" },
@@ -33,13 +30,11 @@ function Header() {
       <div className="hContainer bg-white">
         <a href="/">
           <div className="logoContainer">
-            <Image
-              // src="/logo.svg"
+          <Image
               src="/NewSvgs/Logos/Beacon11.svg"
               width={180}
               height={60}
               alt="ImageHeader"
-              // layout="responsive"
               quality={100}
               priority={true}
               unoptimized
@@ -76,7 +71,7 @@ function Header() {
                   height={18}
                   alt="heroContact"
                 />
-               +971 568 352 250
+               + 966 570 807 175
               </div>
               <div className="bottomVisibleContainer btn">
                 <Image
@@ -85,7 +80,7 @@ function Header() {
                   height={18}
                   alt="heroContact"
                 />
-               +971 568 352 250
+               + 966 570 807 175
               </div>
             </div>
           </div>

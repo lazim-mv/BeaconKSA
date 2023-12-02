@@ -2,12 +2,14 @@
 import React, { useState } from "react";
 import styles from "../../Styles/servicesPage.module.css";
 import Image from "next/image";
-import Header from "@/app/components/Header";
-import MobileHeader from "@/app/components/MobileHeader";
-import { LeftArrowSvg, RightArrowSvg } from "../../components/ButtonSvg";
-import Faq from "@/app/components/Faq";
-import Footer from "@/app/components/Footer";
-import Procedures from "@/app/components/Procedures";
+import dynamic from "next/dynamic";
+
+
+const Header = dynamic(() => import("@/app/components/Header"));
+const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
+const Procedures = dynamic(() => import("@/app/components/Procedures"));
+const Faq = dynamic(() => import("@/app/components/Faq"));
+const Footer = dynamic(() => import("@/app/components/Footer"));
 
 function Services() {
   const servicePageData = [
@@ -188,7 +190,7 @@ function Services() {
               </div>
             )}
             <Image
-              src="/ServicesPage/ServicesPage7.png"
+              src="/ServicesPage/ServicesPage7.webp"
               width={576}
               height={540}
               layout="responsive"
@@ -218,7 +220,7 @@ function Services() {
               </div>
             )}
             <Image
-              src="/ServicesPage/ServicesPage8.png"
+              src="/ServicesPage/ServicesPage8.webp"
               width={500}
               height={500}
               layout="responsive"
