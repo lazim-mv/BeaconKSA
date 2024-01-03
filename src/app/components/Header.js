@@ -1,36 +1,25 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import React from "react";
 
 function Header() {
-  const [isActive, setIsActive] = useState("Home");
+  const pathname = usePathname();
 
   const menuList = [
     { text: "Home", href: "/" },
-    { text: "About Us", href: "/pages/About" },
-    { text: "Services", href: "/pages/Services" },
+    { text: "About Us", href: "/pages/About/" },
+    { text: "Services", href: "/pages/Services/" },
     // { text: "Blogs", href: "/" },
-    { text: "Contact Us", href: "/pages/Contact" },
+    { text: "Contact Us", href: "/pages/Contact/" },
   ];
-
-  const handleClick = (text) => {
-    setIsActive(text);
-    localStorage.setItem("activeMenuItem", text);
-  };
-
-  useEffect(() => {
-    const storedActiveMenuItem = localStorage.getItem("activeMenuItem");
-    if (storedActiveMenuItem) {
-      setIsActive(storedActiveMenuItem);
-    }
-  }, []);
 
   return (
     <>
       <div className="hContainer bg-white">
         <a href="/">
           <div className="logoContainer">
-          <Image
+            <Image
               src="/NewSvgs/Logos/Beacon11.svg"
               width={180}
               height={60}
@@ -48,9 +37,13 @@ function Header() {
                 <li
                   key={index}
                   className={`huListTransitionWrapper ${
-                    item.text === isActive ? "active" : ""
+                    pathname !== undefined &&
+                    pathname !== null &&
+                    pathname !== "" &&
+                    pathname === item.href
+                      ? "active"
+                      : ""
                   }`}
-                  onClick={() => handleClick(item.text)}
                 >
                   <a href={item.href}>
                     <div className="listHoverTop">{item.text}</div>
@@ -61,7 +54,7 @@ function Header() {
             </ul>
           </div>
         </div>
-        <a href="tel:971 568 352 250">
+        <a href="tel:966 570 807 175">
           <div className="hButtonContainer headerContactButton">
             <div className="visibleWrapperContainer">
               <div className="topVisibleContainer btn">
@@ -71,7 +64,7 @@ function Header() {
                   height={18}
                   alt="heroContact"
                 />
-               + 966 570 807 175
+                + 966 570 807 175
               </div>
               <div className="bottomVisibleContainer btn">
                 <Image
@@ -80,7 +73,7 @@ function Header() {
                   height={18}
                   alt="heroContact"
                 />
-               + 966 570 807 175
+                + 966 570 807 175
               </div>
             </div>
           </div>

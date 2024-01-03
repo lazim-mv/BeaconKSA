@@ -1,6 +1,6 @@
 "use client";
 import dynamic from "next/dynamic";
-import { Clients } from "./components/Clients";
+import  Clients  from "./components/Clients";
 import { useEffect, useState } from "react";
 import LoadingCircle from "./components/LoadingCircle";
 
@@ -69,13 +69,13 @@ export default function Home() {
   );
 }
 
-// export async function getStaticProps() {
-//   // Fetch data here (e.g., from an API)
-//   const data = "Some data fetched at build time";
+export async function getStaticProps() {
+  // Fetch data here (e.g., from an API)
+  const data = "Some data fetched at build time";
 
-//   return {
-//     props: {
-//       data,
-//     },
-//   };
-// }
+  return {
+    props: {
+      data,
+    },
+  };
+}

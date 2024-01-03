@@ -25,8 +25,10 @@ function Contact() {
     name: "",
     email: "",
     phone: "",
+    country:"",
     subject: "",
     message: "",
+
   });
 
   const handleChange = (e) => {
@@ -51,6 +53,7 @@ function Contact() {
           name: "",
           email: "",
           phone: "",
+          country:"",
           subject: "",
           message: "",
         });
@@ -132,6 +135,17 @@ function Contact() {
                 onChange={handleChange}
                 placeholder="Type your message here..."
               ></textarea>
+
+              <div style={{ display: "none" }}>
+                <label htmlFor="country">Country *</label>
+                <input
+                  type="text"
+                  id="country"
+                  name="country"
+                  value="Saudi Arabia"
+                  readOnly
+                />
+              </div>
             </div>
             <div className={styles.formSubmit}>
               <button type="submit">Send Message</button>

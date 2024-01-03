@@ -3,29 +3,23 @@ import React, { useEffect, useState } from "react";
 import { LazyMotion, domAnimation, m, useAnimation } from "framer-motion";
 import Image from "next/image";
 import Stats from "./Stats";
+import Brands from "./Brands";
 
 function Clients() {
   const testimonialData = [
     {
       message:
         "“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”",
-      name: "Omar Abdallah",
+      name: "Usman Tariq",
       designation: "Riyadh, KSA",
       img: "/profilePic3.webp",
     },
     {
       message:
         "“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”",
-      name: "Muhammed",
+      name: "Hassan",
       designation: "Jeddah, KSA",
       img: "/profilePic4.webp",
-    },
-    {
-      message:
-        "“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”",
-      name: "Muhammed",
-      designation: "Jeddah, KSA",
-      img: "/profilePic4.jpg",
     },
   ];
 
@@ -61,6 +55,30 @@ function Clients() {
     };
   }, [isMobileScreen]);
 
+  const imageSources = [
+    "/clients/brands/webp/logo1.webp",
+    "/clients/brands/webp/logo2.webp",
+    "/clients/brands/webp/logo3.webp",
+    "/clients/brands/webp/logo4.webp",
+    "/clients/brands/webp/logo5.webp",
+    "/clients/brands/webp/logo6.webp",
+    "/clients/brands/webp/logo9.webp",
+    "/clients/brands/webp/logo10.webp",
+    "/clients/brands/webp/logo11.webp",
+    "/clients/brands/webp/logo12.webp",
+    "/clients/brands/webp/logo13.webp",
+    "/clients/brands/webp/logo15.webp",
+    "/clients/brands/webp/logo17.webp",
+    "/clients/brands/webp/logo18.webp",
+    "/clients/brands/webp/logo20.webp",
+    "/clients/brands/webp/logo22.webp",
+    "/clients/brands/webp/shami.webp",
+  ];
+
+  const repeatedImageSources = Array.from({ length: 5 }, () => [
+    ...imageSources,
+  ]).flat();
+
   return (
     <div className="clientsContainer">
       <div className="businessContentContainer">
@@ -68,7 +86,12 @@ function Clients() {
         <h2 className="businessDesc">Our core partners</h2>
       </div>
       <div className="clientsImgContainer">
-        <ScrollingLogos />
+        <Brands
+          imageSources={repeatedImageSources}
+          initialAnimateValue="-160%"
+          hoverDuration="180"
+          duration="100"
+        />
       </div>
       <div className="testimonialMainContainer">
         <div className="businessContentContainer">
@@ -143,601 +166,4 @@ function Clients() {
   );
 }
 
-function ScrollingLogos() {
-  const [animateValue, setAnimateValue] = useState("-200%");
-
-  useEffect(() => {
-    const handleResize = () => {
-      const screenWidth = window.innerWidth;
-
-      const newAnimateValue = screenWidth < 600 ? "-325%" : "-200%";
-
-      // Update the animate value only if it has changed
-      if (newAnimateValue !== animateValue) {
-        setAnimateValue(newAnimateValue);
-      }
-    };
-
-    // Attach the resize event listener
-    window.addEventListener("resize", handleResize);
-
-    // Call handleResize once to set the initial animate value
-    handleResize();
-
-    // Remove the event listener on component unmount
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [animateValue]);
-
-  const controls = useAnimation();
-
-  const handleHoverStart = () => {
-    controls.start({
-      x: animateValue,
-      transition: {
-        repeat: Infinity,
-        duration: 180, // Adjust the duration when hovering
-        ease: "linear",
-      },
-    });
-  };
-
-  const handleHoverEnd = () => {
-    controls.start({
-      x: animateValue,
-      transition: {
-        repeat: Infinity,
-        duration: 60, // Original duration
-        ease: "linear",
-      },
-    });
-  };
-
-  useEffect(() => {
-    handleHoverEnd();
-    console.log("use");
-  }, []);
-
-  return (
-    <LazyMotion features={domAnimation}>
-      <m.div
-        className="scrolling-logos"
-        initial={{ x: "0%" }}
-        animate={controls}
-        onMouseEnter={handleHoverStart}
-        onMouseLeave={handleHoverEnd}
-      >
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo1.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo2.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo3.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo4.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo5.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo6.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo9.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo10.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo11.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo12.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo13.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo15.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo17.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo18.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo20.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo22.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo1.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo2.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo3.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo4.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo5.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo6.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo9.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo10.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo11.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo12.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo13.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo15.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo17.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo18.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo20.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo22.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo1.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo2.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo3.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo4.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo5.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo6.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo9.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo10.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo11.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo12.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo13.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo15.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo17.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo18.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo20.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-        <Image
-          quality={100}
-          loading="lazy"
-          unoptimized
-          src="/clients/brands/webp/logo22.webp"
-          width={100}
-          height={0}
-          layout="responsive"
-          alt="ImageClients"
-          className="logoClients"
-        />
-      </m.div>
-    </LazyMotion>
-  );
-}
-export { Clients, ScrollingLogos };
+export default Clients;
