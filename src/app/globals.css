@@ -1917,8 +1917,8 @@ li{
   
   .mHeader{
     display: flex;
-    padding: 0 30px;
-    height: 60px;
+    padding: 0 60px;
+    height: 65px;
     align-items: center;
   }
 
@@ -1927,7 +1927,7 @@ li{
   }
 
   .heorHeading{
-    font-size: 1.475rem;
+    font-size: 5vw;
   }
 
   .heroDesc{
@@ -1937,7 +1937,7 @@ li{
   .mHeroDesc{
     display: block;
     color: rgba(255, 255, 255, 0.80);
-    font-size: 12px;
+    font-size: 1.5vw;
   }
   
   .heroContainer .heroButton{
@@ -1963,7 +1963,7 @@ li{
   
 
   .serviceContainer{
-    padding: 0 30px;
+    padding: 0 60px;
   }
 
   .cardMainContainer{
@@ -1987,7 +1987,7 @@ li{
   }
 
   .locationContainer{
-    padding: 0 30px;
+    padding: 0 60px;
   }
 
   .locationFlexContainer{
@@ -2001,7 +2001,6 @@ li{
   .locationContentContainer{
     width: 100%;
     margin: 0;
-    align-items: center;
   }
 
   .locationHeading{
@@ -2018,9 +2017,9 @@ li{
   }
 
   .jurisdictionContainer{
-    padding: 100px 30px;
+    padding: 100px 60px;
   }
-  
+
   .juriContent{
     height: 50%;
     padding: 10px;
@@ -2031,7 +2030,7 @@ li{
   }
 
   .placesContainer{
-    padding: 100px 30px;
+    padding: 100px 60px;
   }
 
   .greenBannerContiner h1{
@@ -2042,25 +2041,8 @@ li{
     width: auto;
   }
 
-  .ProceduresContainer{
-    padding: 80px 30px;
-  }
-  
-  .proceduresCardContainer{
-    gap: 10px;
-  }
-
-  .lineContainer{
-    height: 45px;
-    overflow-y: hidden;
-  }
-
-  .circleNumber{
-    height: 50px;
-  }
-
   .faqMainContainer{
-    padding: 0 30px;
+    padding: 0 60px;
   }
 
   .faqContentContainer{
@@ -2068,7 +2050,7 @@ li{
   }
 
   .contactMainContainer{
-    padding: 0 30px;
+    padding: 0 60px;
   }
 
   .footerContainer{
@@ -2176,7 +2158,28 @@ li{
     justify-content: center;
   }
 
+  .ProceduresContainer{
+    padding: 80px 60px;
+  }
+  
+  .proceduresCardContainer{
+    gap: 10px;
+  }
+  
+  .lineContainer{
+    height: 45px;
+    overflow-y: hidden;
+  }
+  
+  .circleNumber{
+    height: 50px;
+  }
+
 }
+
+
+
+
 
 @media (max-width: 600px) {
 
