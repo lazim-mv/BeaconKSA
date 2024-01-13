@@ -2284,7 +2284,7 @@ li{
 
   .mHeader{
     display: flex;
-    height: 75px;
+    height: 20vw;
     padding: 0 24px;
     align-items: center;
   }
@@ -2344,66 +2344,70 @@ li{
   .hContainer{
     display: none;
   }
-  
-  .imageWithText{
-    height: 100%;
-  }
+  /* Hero Start */
 
-  .textOverlay{
-    padding: 0 24px;
-    top: 32vh;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  .heroContainer {
-    /* margin-top: 74px; */
-  }
-
-  .heroContainer .heroButton{
-    width: 166px;
-    height: 46px;
+  .heroContainer{
+    height: 160vw;
+    width: 100vw;
+    position: relative;
   }
 
   .hImage{
-    height: 80vh !important;
+    height: 160vw !important;
+    object-fit: cover;
+    object-position: -106.66666666666667vw;
   }
 
-  .MobilehImage{
-    display: block;
-    margin-top: 500px;
+  .heroContent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 87.2vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .heroDescContainer{
-    width: auto;
-  }
-
-  .textOverlay h1{
+  .heroTitle{
     color: #FFF;
-    text-align: center !important;
-    font-size: 36px;
-    font-size: 8.835432vw;
+    text-align: center;
+    font-size: 8vw;
     font-style: normal;
     font-weight: 600;
-    line-height: 120%; /* 43.2px */
+    line-height: 9.6vw; 
     text-transform: capitalize;
-    margin-top: -0px;
   }
 
-  .heroDesc{
-    display: none;
-  }
-
-  .mHeroDesc{
-    display: flex;
+  .heroDescription{
+    margin-top: 2.666666666666667vw;
+    width: 87.2vw;
     color: rgba(255, 255, 255, 0.80);
+
     text-align: center;
-    font-size:  3.150vw;
-    
+    font-size: 3.2vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 140%; /* 16.8px */
+    line-height: 4.4799999999999995vw;
   }
+
+  .heroContainer .heroButton{
+    margin-top: 5.333333333333334vw;
+    width: 38.794666666666664vw;
+    height: 11.679999999999998vw;
+    border-radius: 4.947916666666666vw;
+    background-color: #11215B;
+  }
+
+  .heroContainer .heroButton .btn{
+    color: #fff;
+    font-size: 3.2vw;
+  }
+
+
+/* Hero End */
+
 
   .locationHeading{
     display: none;

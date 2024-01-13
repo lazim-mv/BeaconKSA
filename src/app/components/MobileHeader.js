@@ -10,7 +10,7 @@ function MobileHeader() {
 
   const cardStyles = {
     position: "fixed",
-    top: "4rem",
+    top: "3.5rem",
     left: 0,
     width: "100vw",
     height: "100vh",
@@ -32,7 +32,7 @@ function MobileHeader() {
 
   return (
     <div className="mHeader">
-      <div className="fixedmHeadContainer" style={{width:"100%"}}>
+      <div className="fixedmHeadContainer">
         <div className="mHeaderContainer" style={{ width: "100%", margin: 0, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <a href="/">
             <div style={{ fontSize: "1.25rem", fontWeight: 600, color: "#333" }}>
@@ -77,9 +77,9 @@ function MobileHeader() {
               Contact Us
             </a>
             <div style={{ backgroundColor: "#11215B" }} className="hButtonContainer headerContactButton mHeaderBtn">
-              <a href="tel:+ 966 570 807 175" className="btn mBtn">
+              <a href="tel:971 568 352 250" className="btn mBtn">
                 <Image src="/telephone.svg" width={15} height={15} alt="heroContact" />
-                + 966 570 807 175
+                +971 568 352 250
               </a>
             </div>
           </div>

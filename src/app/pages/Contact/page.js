@@ -48,7 +48,6 @@ function Contact() {
       )
       .then((response) => {
         console.log("Email sent successfully!", response);
-        // Optionally, you can reset the form fields here
         setFormData({
           name: "",
           email: "",
@@ -214,6 +213,33 @@ function Contact() {
               </div>
             </div>
 
+            <div className={styles.contactCard}>
+              <a href="https://maps.app.goo.gl/vWfGvAjAcHxV9AUT9">
+                <div className={styles.contactImgContainer}>
+                  <Image
+                    src="/NewSvgs/SVG2/contactMap.png"
+                    width={72}
+                    height={72}
+                    alt="contactLocactionIcon"
+                  />
+                </div>
+                <div className={styles.contactCardContents}>
+                  <h1 className={`${styles.jeddah} servicesHeading`}>Riyadh</h1>
+                  <p className={styles.cardDesc}>
+                    Le Cygne Commercial Center 2, 6th FloorAl-Arz,
+                    Al-Olaya,Riyadh <br /> 12611
+                  </p>
+                </div>
+              </a>
+              <div className={styles.numberContainer}>
+                <a href="tel:966 540 599 655">
+                  + 966 540 599 655
+                  <br /> + 966 539 067 414
+                  <br /> + 966 531 170 957
+                </a>
+              </div>
+            </div>
+            
             <div className={styles.contactCard}>
               <a href="https://maps.app.goo.gl/vWfGvAjAcHxV9AUT9">
                 <div className={styles.contactImgContainer}>

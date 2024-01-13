@@ -81,7 +81,8 @@
     align-items: center;
     background-color: #11215B;
     padding: 0px 0px 15px 0px;
-    width: 35%;
+    width: 18.229166666666664vw;
+    border-radius: 0.6510416666666667vw;
 }
 
 .contactCard a{
@@ -263,7 +264,8 @@
     font-size: 16px;
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 601px) and (max-width: 1280px) {
+
     .container2{
         padding: 0 60px;
     }
@@ -332,17 +334,27 @@
     }
 
     .contactMainCard{
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4vw;
+        justify-content: center;
     }
 
     .contactCard{
         padding-bottom: 20px;
-        width: 100%;
+        width: 41.6vw;
+        border-radius: 2.666666666666667vw;
     }
 
     .contactImgContainer{
+        border-top-left-radius: 2.666666666666667vw;
+        border-top-right-radius: 2.666666666666667vw;
         width: 100%;
         margin-bottom: 10px;
+    }
+
+    .contactCardContents{
+        padding: 0 2.666666666666667vw;
     }
 
     .contactCardContents p{
@@ -366,6 +378,7 @@
     .formContainer{
         padding: 20px 15px;
         gap: 15px;
+        flex-direction: column;
     }
 
     .formContainer label{
