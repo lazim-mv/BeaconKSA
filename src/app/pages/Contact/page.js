@@ -25,10 +25,9 @@ function Contact() {
     name: "",
     email: "",
     phone: "",
-    country:"",
+    country: "",
     subject: "",
     message: "",
-
   });
 
   const handleChange = (e) => {
@@ -52,7 +51,7 @@ function Contact() {
           name: "",
           email: "",
           phone: "",
-          country:"",
+          country: "",
           subject: "",
           message: "",
         });
@@ -239,7 +238,7 @@ function Contact() {
                 </a>
               </div>
             </div>
-            
+
             <div className={styles.contactCard}>
               <a href="https://maps.app.goo.gl/vWfGvAjAcHxV9AUT9">
                 <div className={styles.contactImgContainer}>
@@ -251,16 +250,16 @@ function Contact() {
                   />
                 </div>
                 <div className={styles.contactCardContents}>
-                  <h1 className={`${styles.jeddah} servicesHeading`}>Riyadh</h1>
+                  <h1 className={`${styles.jeddah} servicesHeading`}>Jazan</h1>
                   <p className={styles.cardDesc}>
-                    Le Cygne Commercial Center 2, 6th FloorAl-Arz,
-                    Al-Olaya,Riyadh <br /> 12611
+                    Room No: 05, 4th Floor Makhtha 6, Prince Muhammed bin
+                    Abdulaziz St. Ash Shati District. Jazan 82812
                   </p>
                 </div>
               </a>
               <div className={styles.numberContainer}>
                 <a href="tel:966 540 599 655">
-                  + 966 540 599 655
+                  + 966 563144588
                   <br /> + 966 539 067 414
                   <br /> + 966 531 170 957
                 </a>

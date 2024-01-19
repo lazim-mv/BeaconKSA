@@ -73,6 +73,7 @@
     display: flex;
     gap: 30px;
     width: 100%;
+    justify-content: center;
 }
 
 .contactCard{
@@ -80,8 +81,8 @@
     flex-direction: column;
     align-items: center;
     background-color: #11215B;
-    padding: 0px 0px 15px 0px;
-    width: 18.229166666666664vw;
+    padding: 0px 0px 1.1904761904761905vw 0px;
+    width: 18.51851851851852vw;
     border-radius: 0.6510416666666667vw;
 }
 
@@ -97,11 +98,16 @@
 
 .contactImgContainer{
     margin-bottom: 20px;
-    width: 100%;
+    width: 18.51851851851852vw;
+    height: 9.920634920634921vw;
+    border-top-left-radius: 0.6510416666666667vw;
+    border-top-right-radius: 0.6510416666666667vw;
 }
 
 .contactImgContainer img{
     width: 100% !important;
+    border-top-left-radius: 0.6510416666666667vw;
+    border-top-right-radius: 0.6510416666666667vw;
 }
 
 .contactCardContents{
@@ -114,6 +120,8 @@
 .contactCardContents p{
     color: #fff;
     text-align: center;
+    width: 15.873015873015872vw;
+    height: 5.82010582010582vw;
 }
 
 .jeddah{
@@ -342,7 +350,7 @@
 
     .contactCard{
         padding-bottom: 20px;
-        width: 41.6vw;
+        width: auto;
         border-radius: 2.666666666666667vw;
     }
 
@@ -350,6 +358,7 @@
         border-top-left-radius: 2.666666666666667vw;
         border-top-right-radius: 2.666666666666667vw;
         width: 100%;
+        height: auto;
         margin-bottom: 10px;
     }
 
@@ -360,6 +369,7 @@
     .contactCardContents p{
         font-size: 12px;
         width: 80%;
+        height: auto;
     }
 
     .jeddah{
