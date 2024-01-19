@@ -190,7 +190,7 @@ function Services() {
               </div>
             )}
             <Image
-              src="/ServicesPage/ServicesPage7.webp"
+              src="/ServicesPage/Group.png"
               width={576}
               height={540}
               layout="responsive"

@@ -1,9 +1,9 @@
 "use client";
 import dynamic from "next/dynamic";
-import  Clients  from "./components/Clients";
+import Clients from "./components/Clients";
 import { useEffect, useState } from "react";
 import LoadingCircle from "./components/LoadingCircle";
-
+import WhatsAppChat from "./components/WhatsAppChat";
 
 const Header = dynamic(() => import("@/app/components/Header"));
 const MobileHeader = dynamic(() => import("@/app/components/MobileHeader"));
@@ -14,8 +14,6 @@ const Places = dynamic(() => import("@/app/components/Places"));
 const Faq = dynamic(() => import("@/app/components/Faq"));
 const Contact = dynamic(() => import("@/app/components/Contact"));
 const Footer = dynamic(() => import("@/app/components/Footer"));
-
-
 
 export default function Home() {
   const [textIndex, setTextIndex] = useState(0);
@@ -43,6 +41,7 @@ export default function Home() {
 
   return (
     <>
+      <WhatsAppChat />
       <Header />
       <MobileHeader />
       <div id="white-screen">

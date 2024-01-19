@@ -16,6 +16,8 @@
 
 .aboutUsHeroContainer :nth-child(1){
     margin-top: 5px;
+    width: 80.15873015873017vw;
+    border-radius: 0.6613756613756614vw;
 }
 
 .aboutUsHeroContainer{
@@ -28,7 +30,7 @@
 }
 
 .aboutUsHeroContainer p{
-    width: 95%;
+    width: 66.93121693121694vw;
     color: #58595B;
     text-align: center;
     /* font-size: 14px; */

@@ -112,7 +112,7 @@ function About() {
               quality={100}
               priority={true}
               unoptimized
-              src="/AboutUsPage/aboutUsPage1.webp"
+              src="/AboutUsPage/photo.png"
               width={1212}
               height={600}
               layout="responsive"
