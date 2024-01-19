@@ -299,7 +299,7 @@ li{
   align-items: center;
   gap:70px;
   background: #FFF;
-  padding: 0 135px;
+  padding: 0 9.920634920634921vw;
   margin-top: -11px;
 }
 
@@ -319,8 +319,8 @@ li{
   margin-top: 10px;
   align-self: center;
   width: 38.095238095238095vw;
-  height: 28.10846560846561vw;
-  align-self: center;
+  /* height: 28.10846560846561vw; */
+  /* align-self: center; */
 }
 
 .locationHeading{
@@ -336,7 +336,7 @@ li{
 
 .locationDesc{
   color: #58595B;
-  font-size: 1.0582010582010581vw;
+  /* font-size: 1.0582010582010581vw; */
   font-style: normal;
   font-weight: 400;
   line-height: 135%; /* 22.4px */
@@ -358,8 +358,8 @@ li{
 }
 
 .locationImgContainer{
-  height: 38.095238095238095vw !important;
-  width: 38.095238095238095vw !important;
+  height: 38.095238095238095vw ;
+  width: 38.095238095238095vw ;
 
   margin-bottom: 15px;
 }
@@ -383,7 +383,7 @@ li{
   justify-content: center;
   align-items: center;
   gap:60px;
-  padding: 100px 135px;
+  padding: 100px 9.920634920634921vw;
 }
 
 .jurisdictionContainer .businessContentContainer {
@@ -443,7 +443,7 @@ li{
   justify-content: center;
   align-items: center;
   gap:60px;
-  padding: 100px 135px;
+  padding: 100px 9.920634920634921vw;
 }
 
 .placesContainer .businessContentContainer{
@@ -560,7 +560,7 @@ li{
   justify-content: center;
   align-items: center;
   gap: 70px;
-  padding: 0px 135px;
+  padding: 0px 9.920634920634921vw;
 }
 
 .bussinessContainer .mBusinessDesc{
@@ -710,7 +710,7 @@ li{
   justify-content: center;
   align-items: center;
   gap: 70px;
-  padding: 0px 135px;
+  padding: 0px 9.920634920634921vw;
 }
 
 .serviceContainer .businessContentContainer{
@@ -882,7 +882,7 @@ li{
   justify-content: center;
   align-items: center;
   gap: 70px;
-  padding: 0px 135px;
+  padding: 0px 9.920634920634921vw;
 }
 
 .whyBeaconContentsContainer{
@@ -1190,7 +1190,7 @@ li{
   justify-content: center;
   align-items: center;
   gap: 70px;
-  padding: 0px 135px;
+  padding: 0px 9.920634920634921vw;
 }
 
 .rectangleContainer{
@@ -1269,7 +1269,7 @@ li{
   justify-content: center;
   align-items: center;
   gap: 70px;
-  padding: 0px 135px;
+  padding: 0px 9.920634920634921vw;
 }
 
 .faqContainer{
@@ -1374,7 +1374,7 @@ li{
   justify-content: center;
   align-items: center;
   gap: 70px;
-  padding: 0px 135px;
+  padding: 0px 9.920634920634921vw;
 }
 
 .contactContainer {
@@ -1439,7 +1439,7 @@ li{
   background-color: #11215B;;
   
   /* gap: 51px; */
-  padding: 70px 135px 0px 135px;
+  padding: 70px 9.920634920634921vw 0px 9.920634920634921vw;
 }
 
 .topContainer{
@@ -1721,7 +1721,7 @@ li{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 192px 135px;
+  padding: 192px 9.920634920634921vw;
   background-size: 100% 100%;
 }
 
@@ -1951,7 +1951,7 @@ li{
   color: #fff;
   position: absolute;
   right: 2.604166666666667vw;
-  top: 1.6276041666666667vw;
+  top: 1.2vw;
   font-size: 1.6276041666666667vw;
 }
 
@@ -1977,7 +1977,7 @@ li{
   height: 1.6276041666666667vw;
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 601px) and (max-width: 1280px) {
 
   #white-screen .changeTextContainer{
     margin-left: 0px;
@@ -2035,7 +2035,7 @@ li{
   .locationContainer{
     padding: 0 60px;
   }
-
+/* 
   .locationFlexContainer{
     flex-direction: column;
   }
@@ -2060,7 +2060,7 @@ li{
 
   .locationButton{
     margin: auto;
-  }
+  } */
 
   .jurisdictionContainer{
     padding: 100px 60px;
@@ -2475,6 +2475,8 @@ li{
 
   .locationImgContainer{
     margin: 0;
+    width: 100%;
+    height: auto;
   }
 
   .locationContainer .locationButton{
