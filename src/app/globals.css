@@ -319,8 +319,6 @@ li{
   margin-top: 10px;
   align-self: center;
   width: 38.095238095238095vw;
-  /* height: 28.10846560846561vw; */
-  /* align-self: center; */
 }
 
 .locationHeading{
@@ -2282,6 +2280,20 @@ li{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+  }
+
+  .fixedmHeadContainer{
+    background-color: #FFF;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    height: 75px;
+    padding: 0 24px;
+    align-items: center;
+    height: 20vw;
   }
 
   .mainContainer{
