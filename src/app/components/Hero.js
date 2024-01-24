@@ -18,19 +18,17 @@ function Hero() {
         unoptimized
       />
       <div className="heroContent">
-        <h1 className="heroTitle">
-          Launch and Expand Your Business In UAE with our Expertise
-        </h1>
+        <h1 className="heroTitle">Setup Your Business in Saudi Arabia</h1>
         <p className="heroDescription">
-          We help you fulfill your entrepreneurial journey and dream business
-          setup in UAE with support on tax and accounting to legal support and
-          marketing.
+          Setting up business in KSA might seem hectic without legitimate
+          support. From streamlining the group entities to ensuring high-end
+          corporate governance
         </p>
         <a href="/pages/Contact">
           <div className="hButtonContainer heroButton">
             <div className="visibleWrapperContainer">
               <div className="topVisibleContainer btn">
-                Let&apos;s Talk
+                Contact Us
                 <div className="topVisibleArrow">
                   <Image
                     className="heroArrows"
@@ -42,7 +40,7 @@ function Hero() {
                 </div>
               </div>
               <div className="bottomVisibleContainer btn">
-                Let&apos;s Talk
+                Contact Us
                 <div className="bottomVisibleArrow">
                   <Image
                     className="heroArrows"
